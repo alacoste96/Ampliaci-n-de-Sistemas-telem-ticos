@@ -1,0 +1,21 @@
+<map id="Sensor.h" name="Sensor.h">
+<area shape="rect" id="node1" title="This file contains the declaration of the Sensor class." alt="" coords="690,5,767,32"/>
+<area shape="rect" id="node2" href="$AirQuality_8h.html" title="This file contains the declaration of the AirQuality class." alt="" coords="579,155,676,181"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title=" " alt="" coords="542,453,625,480"/>
+<area shape="rect" id="node4" href="$SensorDB_8h.html" title="This file contains the declaration of the SensorDB class." alt="" coords="397,229,495,256"/>
+<area shape="rect" id="node10" href="$Camera_8h.html" title="This file contains the declaration of the Camera class." alt="" coords="185,80,270,107"/>
+<area shape="rect" id="node14" href="$Humidity_8h.html" title="This file contains the declaration of the Humidity class." alt="" coords="700,155,792,181"/>
+<area shape="rect" id="node15" href="$LightQuality_8h.html" title="This file contains the declaration of the LightQuality class." alt="" coords="816,155,927,181"/>
+<area shape="rect" id="node16" href="$Magnetic_8h.html" title="This file contains the declaration of the Magnetic class." alt="" coords="460,155,555,181"/>
+<area shape="rect" id="node17" href="$Sensor_8cpp.html" title=" " alt="" coords="868,80,960,107"/>
+<area shape="rect" id="node18" href="$Temp_8h.html" title="This file contains the declaration of the Temp class." alt="" coords="951,155,1021,181"/>
+<area shape="rect" id="node5" href="$Alarm_8h.html" title="This file contains the declaration of the Alarm class." alt="" coords="335,304,408,331"/>
+<area shape="rect" id="node7" href="$DashBoard_8h.html" title="This file contains the declaration of the DashBoard class." alt="" coords="228,379,333,405"/>
+<area shape="rect" id="node9" href="$SensorDB_8cpp.html" title=" " alt="" coords="483,304,595,331"/>
+<area shape="rect" id="node6" href="$Alarm_8cpp.html" title=" " alt="" coords="409,379,497,405"/>
+<area shape="rect" id="node8" href="$DashBoard_8cpp.html" title=" " alt="" coords="221,453,341,480"/>
+<area shape="rect" id="node11" href="$Camera_8cpp.html" title=" " alt="" coords="233,155,333,181"/>
+<area shape="rect" id="node12" href="$RGB_8h.html" title=" " alt="" coords="44,155,107,181"/>
+<area shape="rect" id="node13" href="$Termic_8h.html" title="This file contains the declaration of the Termic class." alt="" coords="131,155,209,181"/>
+<area shape="rect" id="node19" href="$Temp_8cpp.html" title=" " alt="" coords="936,229,1020,256"/>
+</map>

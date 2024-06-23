@@ -1,0 +1,86 @@
+\hypertarget{classWorker}{}\doxysection{Worker Class Reference}
+\label{classWorker}\index{Worker@{Worker}}
+
+
+Represents a \mbox{\hyperlink{classWorker}{Worker}}, which is a type of \mbox{\hyperlink{classEmployee}{Employee}}.  
+
+
+
+
+{\ttfamily \#include $<$Worker.\+h$>$}
+
+
+
+Inheritance diagram for Worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classWorker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classWorker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWorker_a70ef502ec42655960ba0dabe7dae7a96}{Worker}} (int nif=0, int id=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classWorker}{Worker}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a \mbox{\hyperlink{classWorker}{Worker}}, which is a type of \mbox{\hyperlink{classEmployee}{Employee}}. 
+
+This class represents a \mbox{\hyperlink{classWorker}{Worker}}, which is a type of \mbox{\hyperlink{classEmployee}{Employee}} with basic permissions. He can only manage sensors(except alarms). 
+
+Definition at line 15 of file Worker.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWorker_a70ef502ec42655960ba0dabe7dae7a96}\label{classWorker_a70ef502ec42655960ba0dabe7dae7a96}} 
+\index{Worker@{Worker}!Worker@{Worker}}
+\index{Worker@{Worker}!Worker@{Worker}}
+\doxysubsubsection{\texorpdfstring{Worker()}{Worker()}}
+{\footnotesize\ttfamily Worker\+::\+Worker (\begin{DoxyParamCaption}\item[{int}]{nif = {\ttfamily 0},  }\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classWorker}{Worker}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nif} & National Identification Number of the worker. \\
+\hline
+{\em id} & Unique identifier of the worker. \\
+\hline
+\end{DoxyParams}
+$<$ Set permission level to 1 for workers.
+
+Definition at line 22 of file Worker.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                    :\mbox{\hyperlink{classEmployee_a3269922ae71828f8797b0daeea2f394a}{Employee}}(nif, \textcolor{keywordtype}{id}) \{}
+\DoxyCodeLine{23         this-\/>\mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} = 1; }
+\DoxyCodeLine{24     \};}
+
+\end{DoxyCode}
+
+
+References Employee\+::permission\+\_\+.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Worker_8h}{Worker.\+h}}\end{DoxyCompactItemize}

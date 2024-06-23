@@ -1,0 +1,11 @@
+<map id="Sensor" name="Sensor">
+<area shape="rect" id="node1" title="Represents a generic sensor." alt="" coords="335,5,463,303"/>
+<area shape="rect" id="node2" href="$classAirQuality.html" title="Represents a Sensor for measuring air quality." alt="" coords="5,373,117,450"/>
+<area shape="rect" id="node3" href="$classCamera.html" title="Represents a camera Sensor." alt="" coords="141,351,251,472"/>
+<area shape="rect" id="node6" href="$classHumidity.html" title="Represents a humidity Sensor." alt="" coords="275,373,381,450"/>
+<area shape="rect" id="node7" href="$classLightQuality.html" title="Represents a light quality Sensor." alt="" coords="406,373,533,450"/>
+<area shape="rect" id="node8" href="$classMagnetic.html" title="Represents a magnetic Sensor." alt="" coords="557,373,664,450"/>
+<area shape="rect" id="node9" href="$classTemp.html" title="Represents a temperature Sensor." alt="" coords="688,373,771,450"/>
+<area shape="rect" id="node4" href="$classRgb.html" title="Represents an RGB Camera Sensor." alt="" coords="107,520,179,597"/>
+<area shape="rect" id="node5" href="$classTermic.html" title="Represents a thermal Camera Sensor." alt="" coords="203,520,293,597"/>
+</map>

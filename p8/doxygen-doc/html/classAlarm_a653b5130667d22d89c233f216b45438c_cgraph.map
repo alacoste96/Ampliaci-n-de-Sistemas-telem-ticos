@@ -1,0 +1,7 @@
+<map id="Alarm::showInfo" name="Alarm::showInfo">
+<area shape="rect" id="node1" title="Displays information about the alarm like if it is turned on or off, and if an intrusion has been det..." alt="" coords="5,31,133,57"/>
+<area shape="rect" id="node2" href="$classAlarm.html#a250bdda1b73aea36374bd9aca8acc2a2" title="Calls the police if an intrusion is detected." alt="" coords="181,31,312,57"/>
+<area shape="rect" id="node3" href="$classAlarm.html#a54927a24ae6cdcd3e430acf59355d869" title="Reads magnetic sensors to detect intrusions." alt="" coords="360,31,517,57"/>
+<area shape="rect" id="node4" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="565,5,741,32"/>
+<area shape="rect" id="node5" href="$classSensorDB.html#a950fbdc2d6a1a800705f364588289032" title=" " alt="" coords="571,56,736,83"/>
+</map>

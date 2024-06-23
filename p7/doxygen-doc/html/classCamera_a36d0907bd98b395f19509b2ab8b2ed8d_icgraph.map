@@ -1,0 +1,4 @@
+<map id="Camera::genRand" name="Camera::genRand">
+<area shape="rect" id="node1" title="Generates a random unsigned integer." alt="" coords="185,5,324,32"/>
+<area shape="rect" id="node2" href="$classCamera.html#add6ac770920522b54a7c641b79bb96f8" title="Constructor for the Camera class." alt="" coords="5,5,137,32"/>
+</map>

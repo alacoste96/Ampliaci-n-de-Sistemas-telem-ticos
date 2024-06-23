@@ -1,0 +1,6 @@
+<map id="DashBoard::showMainMenu" name="DashBoard::showMainMenu">
+<area shape="rect" id="node1" title="Displays the main menu." alt="" coords="5,56,208,83"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#a3717ec3fe9e85a46a7da52185bff6832" title="Prompts the user to select an option." alt="" coords="260,5,447,32"/>
+<area shape="rect" id="node3" href="$classEmployee.html#a2b7d7915179835d1b51b6a35cf981748" title=" " alt="" coords="256,56,451,83"/>
+<area shape="rect" id="node4" href="$classEmployee.html#a60ee70b1e6a5084e480d2ef97dac8dd5" title=" " alt="" coords="259,107,447,133"/>
+</map>

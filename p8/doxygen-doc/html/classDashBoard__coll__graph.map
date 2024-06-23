@@ -1,0 +1,7 @@
+<map id="DashBoard" name="DashBoard">
+<area shape="rect" id="node1" title="Represents a dashboard for system management." alt="" coords="251,351,419,575"/>
+<area shape="rect" id="node2" href="$classEmployee.html" title="Represents an Employee." alt="" coords="5,5,152,288"/>
+<area shape="rect" id="node3" href="$classUserDB.html" title="Represents a User&#39;s database." alt="" coords="177,27,327,266"/>
+<area shape="rect" id="node4" href="$classAlarm.html" title="Represents an Alarm system." alt="" coords="351,49,486,244"/>
+<area shape="rect" id="node5" href="$classSensorDB.html" title="Represents a database of sensors." alt="" coords="511,13,665,281"/>
+</map>

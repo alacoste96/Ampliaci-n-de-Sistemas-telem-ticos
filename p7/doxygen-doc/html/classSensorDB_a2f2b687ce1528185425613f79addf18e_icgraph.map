@@ -1,0 +1,17 @@
+<map id="SensorDB::getNumSens" name="SensorDB::getNumSens">
+<area shape="rect" id="node1" title="Retrieves the number of sensors in the database." alt="" coords="608,157,784,184"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#ace45281a9e16900f77bd30fd31f81c95" title="Retrieves a sensor with the specified ID." alt="" coords="376,5,543,32"/>
+<area shape="rect" id="node4" href="$classSensorDB.html#add954cfc3518fe6944192c1c031fe53c" title="Retrieves the next available ID for a new sensor." alt="" coords="381,56,538,83"/>
+<area shape="rect" id="node7" href="$classSensorDB.html#abea0441eb3eba7c80f635890976f88da" title="Retrieves the number of sensors of the specified type in the database." alt="" coords="359,107,560,133"/>
+<area shape="rect" id="node9" href="$classAlarm.html#a54927a24ae6cdcd3e430acf59355d869" title="Reads magnetic sensors to detect intrusions." alt="" coords="381,157,538,184"/>
+<area shape="rect" id="node11" href="$classSensorDB.html#acfcf0f1044ac1244c3e6b01571122051" title="Saves sensor information to a file." alt="" coords="147,208,271,235"/>
+<area shape="rect" id="node12" href="$classSensorDB.html#ae4c4e112faf9f3ebb178e99c2a2e8717" title="Displays information about all sensors in the database." alt="" coords="387,259,531,285"/>
+<area shape="rect" id="node14" href="$classSensorDB.html#a7375a8cc9c19a8291add51e62abe1b6a" title="Displays information about sensors of the specified type in the database." alt="" coords="372,309,547,336"/>
+<area shape="rect" id="node3" href="$classSensorDB.html#a4845eccb3f093505f390b0d728c4db41" title="Displays information about the sensor with the specified ID." alt="" coords="133,5,286,32"/>
+<area shape="rect" id="node5" href="$classDashBoard.html#abe8fd5cbc5df29e25bcbb32548aece1a" title="Adds a new sensor to the database." alt="" coords="125,56,294,83"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,233,60,260"/>
+<area shape="rect" id="node8" href="$classSensorDB.html#aa3a7bc8c386cdd8aeec12ff4b0810ed3" title="Retrieves the sensors of the specified type." alt="" coords="113,107,305,133"/>
+<area shape="rect" id="node10" href="$classAlarm.html#a250bdda1b73aea36374bd9aca8acc2a2" title="Calls the police if an intrusion is detected." alt="" coords="144,157,275,184"/>
+<area shape="rect" id="node13" href="$classDashBoard.html#a1b72b3ab0212bca997e4755f9670441b" title="Displays information about all sensors." alt="" coords="108,259,311,285"/>
+<area shape="rect" id="node15" href="$classDashBoard.html#af822fdb9c274cd77dba3c95714e5821b" title="Displays information about sensors of a specific type." alt="" coords="118,309,301,336"/>
+</map>

@@ -1,0 +1,84 @@
+\hypertarget{classSupervisor}{}\doxysection{Supervisor Class Reference}
+\label{classSupervisor}\index{Supervisor@{Supervisor}}
+
+
+Represents a \mbox{\hyperlink{classSupervisor}{Supervisor}}, which is a type of \mbox{\hyperlink{classEmployee}{Employee}}.  
+
+
+
+
+{\ttfamily \#include $<$Supervisor.\+h$>$}
+
+
+
+Inheritance diagram for Supervisor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classSupervisor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Supervisor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classSupervisor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSupervisor_a32efaab11695bc06bee5f3a4f9b61f68}{Supervisor}} (int nif=0, int id=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classSupervisor}{Supervisor}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a \mbox{\hyperlink{classSupervisor}{Supervisor}}, which is a type of \mbox{\hyperlink{classEmployee}{Employee}}. 
+
+This class represents a \mbox{\hyperlink{classSupervisor}{Supervisor}}, which is a type of \mbox{\hyperlink{classEmployee}{Employee}} with intermediate permissions. He can manage alarms but cannot manage user\textquotesingle{}s databases. 
+
+Definition at line 17 of file Supervisor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSupervisor_a32efaab11695bc06bee5f3a4f9b61f68}\label{classSupervisor_a32efaab11695bc06bee5f3a4f9b61f68}} 
+\index{Supervisor@{Supervisor}!Supervisor@{Supervisor}}
+\index{Supervisor@{Supervisor}!Supervisor@{Supervisor}}
+\doxysubsubsection{\texorpdfstring{Supervisor()}{Supervisor()}}
+{\footnotesize\ttfamily Supervisor\+::\+Supervisor (\begin{DoxyParamCaption}\item[{int}]{nif = {\ttfamily 0},  }\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classSupervisor}{Supervisor}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nif} & National Identification Number of the supervisor. \\
+\hline
+{\em id} & Unique identifier of the supervisor. \\
+\hline
+\end{DoxyParams}
+$<$ Set permission level to 2 for supervisors.
+
+Definition at line 24 of file Supervisor.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                                      :\mbox{\hyperlink{classEmployee_a3269922ae71828f8797b0daeea2f394a}{Employee}}(nif, \textcolor{keywordtype}{id}) \{}
+\DoxyCodeLine{25       this-\/>\mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} = 2; }
+\DoxyCodeLine{26   \};}
+
+\end{DoxyCode}
+
+
+References Employee\+::permission\+\_\+.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Supervisor_8h}{Supervisor.\+h}}\end{DoxyCompactItemize}

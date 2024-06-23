@@ -1,0 +1,6 @@
+<map id="Employee" name="Employee">
+<area shape="rect" id="node1" title="Represents an Employee." alt="" coords="103,5,250,288"/>
+<area shape="rect" id="node2" href="$classAdmin.html" title="Represents an Administrator, which is a type of Employee." alt="" coords="5,336,95,413"/>
+<area shape="rect" id="node3" href="$classSupervisor.html" title="Represents a Supervisor, which is a type of Employee." alt="" coords="119,336,235,413"/>
+<area shape="rect" id="node4" href="$classWorker.html" title="Represents a Worker, which is a type of Employee." alt="" coords="259,336,351,413"/>
+</map>

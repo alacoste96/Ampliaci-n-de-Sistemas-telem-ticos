@@ -1,0 +1,4 @@
+<map id="SensorDB::getNsensByType" name="SensorDB::getNsensByType">
+<area shape="rect" id="node1" title="Retrieves the number of sensors of the specified type in the database." alt="" coords="245,5,447,32"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#aa3a7bc8c386cdd8aeec12ff4b0810ed3" title="Retrieves the sensors of the specified type." alt="" coords="5,5,197,32"/>
+</map>

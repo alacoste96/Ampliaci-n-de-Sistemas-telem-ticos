@@ -1,0 +1,9 @@
+<map id="DashBoard::askForOption" name="DashBoard::askForOption">
+<area shape="rect" id="node1" title="Prompts the user to select an option." alt="" coords="629,107,816,133"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#af81e9a8de62ae3f10880d076782905dd" title="Prompts the user to select a sensor type." alt="" coords="363,56,577,83"/>
+<area shape="rect" id="node6" href="$classDashBoard.html#a52141d1537657e5a6a874176bd5d01ab" title="Displays the main menu." alt="" coords="108,107,311,133"/>
+<area shape="rect" id="node7" href="$classDashBoard.html#a110ee829819beafad009cd48071e2a65" title="Displays the sensors menu." alt="" coords="359,157,581,184"/>
+<area shape="rect" id="node3" href="$classDashBoard.html#abe8fd5cbc5df29e25bcbb32548aece1a" title="Adds a new sensor to the database." alt="" coords="125,5,294,32"/>
+<area shape="rect" id="node5" href="$classDashBoard.html#af822fdb9c274cd77dba3c95714e5821b" title="Displays information about sensors of a specific type." alt="" coords="118,56,301,83"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
+</map>

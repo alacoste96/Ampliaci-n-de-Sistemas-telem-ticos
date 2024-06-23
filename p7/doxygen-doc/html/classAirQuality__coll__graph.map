@@ -1,0 +1,4 @@
+<map id="AirQuality" name="AirQuality">
+<area shape="rect" id="node1" title="Represents a Sensor for measuring air quality." alt="" coords="23,351,135,428"/>
+<area shape="rect" id="node2" href="$classSensor.html" title="Represents a generic sensor." alt="" coords="5,5,152,303"/>
+</map>

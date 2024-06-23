@@ -1,0 +1,5 @@
+<map id="SensorDB::getSensByType" name="SensorDB::getSensByType">
+<area shape="rect" id="node1" title="Retrieves the sensors of the specified type." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#abea0441eb3eba7c80f635890976f88da" title="Retrieves the number of sensors of the specified type in the database." alt="" coords="245,5,447,32"/>
+<area shape="rect" id="node3" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="495,5,671,32"/>
+</map>

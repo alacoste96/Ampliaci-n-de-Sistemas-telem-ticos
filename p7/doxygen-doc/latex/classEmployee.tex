@@ -1,0 +1,497 @@
+\hypertarget{classEmployee}{}\doxysection{Employee Class Reference}
+\label{classEmployee}\index{Employee@{Employee}}
+
+
+Represents an \mbox{\hyperlink{classEmployee}{Employee}}.  
+
+
+
+
+{\ttfamily \#include $<$Employee.\+h$>$}
+
+
+
+Inheritance diagram for Employee\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classEmployee__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Employee\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classEmployee__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEmployee_a3269922ae71828f8797b0daeea2f394a}{Employee}} (int nif=0, int id=0, int permission=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classEmployee}{Employee}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEmployee_a2362043b698c098ad9143ced7112a627}{showinfo}} ()
+\begin{DoxyCompactList}\small\item\em Displays information about the employee. \end{DoxyCompactList}\item 
+std\+::time\+\_\+t \mbox{\hyperlink{classEmployee_a78f548873a5095e47b522285dc0f2f04}{get\+Timestamp}} ()
+\item 
+int \mbox{\hyperlink{classEmployee_a2c0034d26290607a72221caedbfa45fe}{get\+Nif}} () const
+\item 
+int \mbox{\hyperlink{classEmployee_a59e25c1c6eeaff55c13ac06ff1c581a2}{get\+Id}} () const
+\item 
+int \mbox{\hyperlink{classEmployee_a60ee70b1e6a5084e480d2ef97dac8dd5}{get\+Permission}} () const
+\item 
+void \mbox{\hyperlink{classEmployee_a2edaeb46a48f6f1256e2a9f5fb2f93ca}{set\+Nif}} (int nif)
+\item 
+void \mbox{\hyperlink{classEmployee_aca27234b8db38e84d5d40872fa4fa9e5}{set\+Id}} (int id)
+\item 
+std\+::string \mbox{\hyperlink{classEmployee_a2b7d7915179835d1b51b6a35cf981748}{get\+Employ\+Type}} ()
+\item 
+void \mbox{\hyperlink{classEmployee_a30f6d44ca9a73834f7aa5788088f394e}{set\+Permission}} (int permission)
+\item 
+void \mbox{\hyperlink{classEmployee_ae91ca7949b7d063e40d24715fcaa0309}{set\+Timestamp}} (std\+::time\+\_\+t timestamp)
+\item 
+bool \mbox{\hyperlink{classEmployee_a0b9693fc3cd6593efea804c547993f10}{operator$<$}} (const \mbox{\hyperlink{classEmployee}{Employee}} \&right) const
+\begin{DoxyCompactList}\small\item\em Overloaded less-\/than operator to compare two employees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classEmployee_a02c0f5c59bdf9d45e263114b5953d9f4}{nif\+\_\+}}
+\item 
+int \mbox{\hyperlink{classEmployee_a83fa5faaa851e55183193f2a9e411513}{id\+\_\+}}
+\item 
+int \mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\+\_\+}}
+\item 
+std\+::time\+\_\+t \mbox{\hyperlink{classEmployee_accef94fb1a3124f3014afc5235fa7bc6}{timestamp\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an \mbox{\hyperlink{classEmployee}{Employee}}. 
+
+This class represents an \mbox{\hyperlink{classEmployee}{Employee}} with attributes such as NIF, ID, permission level, and timestamp. 
+
+Definition at line 18 of file Employee.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEmployee_a3269922ae71828f8797b0daeea2f394a}\label{classEmployee_a3269922ae71828f8797b0daeea2f394a}} 
+\index{Employee@{Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}}
+{\footnotesize\ttfamily Employee\+::\+Employee (\begin{DoxyParamCaption}\item[{int}]{nif = {\ttfamily 0},  }\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{permission = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classEmployee}{Employee}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nif} & National Identification Number of the employee. \\
+\hline
+{\em id} & Unique identifier of the employee. \\
+\hline
+{\em permission} & Permission level of the employee. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4                                                  \{}
+\DoxyCodeLine{5     this-\/>\mbox{\hyperlink{classEmployee_a02c0f5c59bdf9d45e263114b5953d9f4}{nif\_}} = nif;}
+\DoxyCodeLine{6     this-\/>\mbox{\hyperlink{classEmployee_a83fa5faaa851e55183193f2a9e411513}{id\_}} = id;}
+\DoxyCodeLine{7     this-\/>\mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} = permission;}
+\DoxyCodeLine{8     this-\/>\mbox{\hyperlink{classEmployee_accef94fb1a3124f3014afc5235fa7bc6}{timestamp\_}} = std::time(0);}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+
+
+References id\+\_\+, nif\+\_\+, permission\+\_\+, and timestamp\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEmployee_a2b7d7915179835d1b51b6a35cf981748}\label{classEmployee_a2b7d7915179835d1b51b6a35cf981748}} 
+\index{Employee@{Employee}!getEmployType@{getEmployType}}
+\index{getEmployType@{getEmployType}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getEmployType()}{getEmployType()}}
+{\footnotesize\ttfamily std\+::string Employee\+::get\+Employ\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12                        \{}
+\DoxyCodeLine{13     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} == 1)}
+\DoxyCodeLine{14         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Worker"{}};}
+\DoxyCodeLine{15     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} == 2)}
+\DoxyCodeLine{16         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Supervisor"{}};}
+\DoxyCodeLine{17     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{18         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Admin"{}};}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
+
+
+References permission\+\_\+.
+
+
+
+Referenced by main().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classEmployee_a2b7d7915179835d1b51b6a35cf981748_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEmployee_a59e25c1c6eeaff55c13ac06ff1c581a2}\label{classEmployee_a59e25c1c6eeaff55c13ac06ff1c581a2}} 
+\index{Employee@{Employee}!getId@{getId}}
+\index{getId@{getId}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Employee\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 27 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                      \{}
+\DoxyCodeLine{28     \textcolor{keywordflow}{return} \mbox{\hyperlink{classEmployee_a83fa5faaa851e55183193f2a9e411513}{id\_}};}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+
+
+References id\+\_\+.
+
+
+
+Referenced by Employee\+Nif\+Compare\+::operator()().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classEmployee_a59e25c1c6eeaff55c13ac06ff1c581a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEmployee_a2c0034d26290607a72221caedbfa45fe}\label{classEmployee_a2c0034d26290607a72221caedbfa45fe}} 
+\index{Employee@{Employee}!getNif@{getNif}}
+\index{getNif@{getNif}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getNif()}{getNif()}}
+{\footnotesize\ttfamily int Employee\+::get\+Nif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 22 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                       \{}
+\DoxyCodeLine{23     \textcolor{keywordflow}{return} \mbox{\hyperlink{classEmployee_a02c0f5c59bdf9d45e263114b5953d9f4}{nif\_}};}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+
+
+References nif\+\_\+.
+
+
+
+Referenced by Employee\+Nif\+Compare\+::operator()().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classEmployee_a2c0034d26290607a72221caedbfa45fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEmployee_a60ee70b1e6a5084e480d2ef97dac8dd5}\label{classEmployee_a60ee70b1e6a5084e480d2ef97dac8dd5}} 
+\index{Employee@{Employee}!getPermission@{getPermission}}
+\index{getPermission@{getPermission}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getPermission()}{getPermission()}}
+{\footnotesize\ttfamily int Employee\+::get\+Permission (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 32 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                              \{}
+\DoxyCodeLine{33     \textcolor{keywordflow}{return} \mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}};}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+
+
+References permission\+\_\+.
+
+
+
+Referenced by operator$<$(), and Dash\+Board\+::show\+Main\+Menu().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEmployee_a60ee70b1e6a5084e480d2ef97dac8dd5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEmployee_a78f548873a5095e47b522285dc0f2f04}\label{classEmployee_a78f548873a5095e47b522285dc0f2f04}} 
+\index{Employee@{Employee}!getTimestamp@{getTimestamp}}
+\index{getTimestamp@{getTimestamp}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getTimestamp()}{getTimestamp()}}
+{\footnotesize\ttfamily std\+::time\+\_\+t Employee\+::get\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                       \{}
+\DoxyCodeLine{38     \textcolor{keywordflow}{return} \mbox{\hyperlink{classEmployee_accef94fb1a3124f3014afc5235fa7bc6}{timestamp\_}};}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}
+
+
+References timestamp\+\_\+.
+
+\mbox{\Hypertarget{classEmployee_a0b9693fc3cd6593efea804c547993f10}\label{classEmployee_a0b9693fc3cd6593efea804c547993f10}} 
+\index{Employee@{Employee}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Employee\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEmployee}{Employee}} \&}]{right }\end{DoxyParamCaption}) const}
+
+
+
+Overloaded less-\/than operator to compare two employees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & The employee to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this employee is less than the other employee, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                                                \{}
+\DoxyCodeLine{71     \textcolor{keywordflow}{return} (this-\/>\mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} < right.\mbox{\hyperlink{classEmployee_a60ee70b1e6a5084e480d2ef97dac8dd5}{getPermission}}());}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+
+
+References get\+Permission(), and permission\+\_\+.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEmployee_a0b9693fc3cd6593efea804c547993f10_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEmployee_aca27234b8db38e84d5d40872fa4fa9e5}\label{classEmployee_aca27234b8db38e84d5d40872fa4fa9e5}} 
+\index{Employee@{Employee}!setId@{setId}}
+\index{setId@{setId}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Employee\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                      \{}
+\DoxyCodeLine{48     \mbox{\hyperlink{classEmployee_a83fa5faaa851e55183193f2a9e411513}{id\_}} = id;}
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+
+
+References id\+\_\+.
+
+\mbox{\Hypertarget{classEmployee_a2edaeb46a48f6f1256e2a9f5fb2f93ca}\label{classEmployee_a2edaeb46a48f6f1256e2a9f5fb2f93ca}} 
+\index{Employee@{Employee}!setNif@{setNif}}
+\index{setNif@{setNif}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{setNif()}{setNif()}}
+{\footnotesize\ttfamily void Employee\+::set\+Nif (\begin{DoxyParamCaption}\item[{int}]{nif }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                        \{}
+\DoxyCodeLine{43     \mbox{\hyperlink{classEmployee_a02c0f5c59bdf9d45e263114b5953d9f4}{nif\_}} = nif;}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+
+
+References nif\+\_\+.
+
+\mbox{\Hypertarget{classEmployee_a30f6d44ca9a73834f7aa5788088f394e}\label{classEmployee_a30f6d44ca9a73834f7aa5788088f394e}} 
+\index{Employee@{Employee}!setPermission@{setPermission}}
+\index{setPermission@{setPermission}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{setPermission()}{setPermission()}}
+{\footnotesize\ttfamily void Employee\+::set\+Permission (\begin{DoxyParamCaption}\item[{int}]{permission }\end{DoxyParamCaption})}
+
+
+
+Definition at line 52 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                      \{}
+\DoxyCodeLine{53     \mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} = permission;}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}
+
+
+References permission\+\_\+.
+
+\mbox{\Hypertarget{classEmployee_ae91ca7949b7d063e40d24715fcaa0309}\label{classEmployee_ae91ca7949b7d063e40d24715fcaa0309}} 
+\index{Employee@{Employee}!setTimestamp@{setTimestamp}}
+\index{setTimestamp@{setTimestamp}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{setTimestamp()}{setTimestamp()}}
+{\footnotesize\ttfamily void Employee\+::set\+Timestamp (\begin{DoxyParamCaption}\item[{std\+::time\+\_\+t}]{timestamp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                          \{}
+\DoxyCodeLine{58     \mbox{\hyperlink{classEmployee_accef94fb1a3124f3014afc5235fa7bc6}{timestamp\_}} = timestamp;}
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}
+
+
+References timestamp\+\_\+.
+
+\mbox{\Hypertarget{classEmployee_a2362043b698c098ad9143ced7112a627}\label{classEmployee_a2362043b698c098ad9143ced7112a627}} 
+\index{Employee@{Employee}!showinfo@{showinfo}}
+\index{showinfo@{showinfo}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{showinfo()}{showinfo()}}
+{\footnotesize\ttfamily void Employee\+::showinfo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays information about the employee. 
+
+
+
+Definition at line 62 of file Employee.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                   \{}
+\DoxyCodeLine{63     std::cout << \textcolor{stringliteral}{"{}NIF: "{}} << \mbox{\hyperlink{classEmployee_a02c0f5c59bdf9d45e263114b5953d9f4}{nif\_}} << std::endl;}
+\DoxyCodeLine{64     std::cout << \textcolor{stringliteral}{"{}ID: "{}} << \mbox{\hyperlink{classEmployee_a83fa5faaa851e55183193f2a9e411513}{id\_}} << std::endl;}
+\DoxyCodeLine{65     std::cout << \textcolor{stringliteral}{"{}permission: "{}} << \mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} << std::endl;}
+\DoxyCodeLine{66     std::cout << \textcolor{stringliteral}{"{}Timestamp: "{}} << \mbox{\hyperlink{classEmployee_accef94fb1a3124f3014afc5235fa7bc6}{timestamp\_}} << std::endl;}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+
+
+References id\+\_\+, nif\+\_\+, permission\+\_\+, and timestamp\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEmployee_a83fa5faaa851e55183193f2a9e411513}\label{classEmployee_a83fa5faaa851e55183193f2a9e411513}} 
+\index{Employee@{Employee}!id\_@{id\_}}
+\index{id\_@{id\_}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{id\_}{id\_}}
+{\footnotesize\ttfamily int Employee\+::id\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unique identifier of the employee. Used as password in the login process. 
+
+Definition at line 21 of file Employee.\+h.
+
+
+
+Referenced by Employee(), get\+Id(), set\+Id(), and showinfo().
+
+\mbox{\Hypertarget{classEmployee_a02c0f5c59bdf9d45e263114b5953d9f4}\label{classEmployee_a02c0f5c59bdf9d45e263114b5953d9f4}} 
+\index{Employee@{Employee}!nif\_@{nif\_}}
+\index{nif\_@{nif\_}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{nif\_}{nif\_}}
+{\footnotesize\ttfamily int Employee\+::nif\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+National Identification Number of the employee. 
+
+Definition at line 20 of file Employee.\+h.
+
+
+
+Referenced by Employee(), get\+Nif(), set\+Nif(), and showinfo().
+
+\mbox{\Hypertarget{classEmployee_ae817d17c217be3c719bedf02ba8e362b}\label{classEmployee_ae817d17c217be3c719bedf02ba8e362b}} 
+\index{Employee@{Employee}!permission\_@{permission\_}}
+\index{permission\_@{permission\_}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{permission\_}{permission\_}}
+{\footnotesize\ttfamily int Employee\+::permission\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Permission level of the employee (3 for admins, 2 for supervisors, 1 for workers). 
+
+Definition at line 22 of file Employee.\+h.
+
+
+
+Referenced by Admin\+::\+Admin(), Employee(), get\+Employ\+Type(), get\+Permission(), operator$<$(), set\+Permission(), showinfo(), Supervisor\+::\+Supervisor(), and Worker\+::\+Worker().
+
+\mbox{\Hypertarget{classEmployee_accef94fb1a3124f3014afc5235fa7bc6}\label{classEmployee_accef94fb1a3124f3014afc5235fa7bc6}} 
+\index{Employee@{Employee}!timestamp\_@{timestamp\_}}
+\index{timestamp\_@{timestamp\_}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{timestamp\_}{timestamp\_}}
+{\footnotesize\ttfamily std\+::time\+\_\+t Employee\+::timestamp\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Timestamp indicating when the employee was created. 
+
+Definition at line 23 of file Employee.\+h.
+
+
+
+Referenced by Employee(), get\+Timestamp(), set\+Timestamp(), and showinfo().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Employee_8h}{Employee.\+h}}\item 
+\mbox{\hyperlink{Employee_8cpp}{Employee.\+cpp}}\end{DoxyCompactItemize}

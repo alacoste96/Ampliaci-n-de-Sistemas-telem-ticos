@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>938</x>
+      <y>168</y>
+      <w>168</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>UserDB
+--
+-employees_: set(*Employee)
+-num_employees_ : int
+--
++showByPerm(int): void
++showAll(): void
++addUser(*Employee): void
++delUser(int index): void
++saveEmployees(): void
++loadEmployees(): void
++nifExists(int nif): bool
++idExists(int id): bool
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>854</x>
+      <y>448</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Admin</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>959</x>
+      <y>336</y>
+      <w>133</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+#nif_: Integer
+#id_: Integer
+#timestamp_: time_t
+#permision_: Integer
+--
++showinfo(): void
++getEmployType(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>448</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Supervisor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1092</x>
+      <y>448</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Worker</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>427</y>
+      <w>112</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>427</y>
+      <w>21</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1029</x>
+      <y>427</y>
+      <w>112</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1141</x>
+      <y>231</y>
+      <w>189</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>DBs are text files with restricted permisions of r/w
+structure:
+- The ID is hashed with Sha256 
+- 1 user per line. NIF-ID-permision-Timestamp
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1015</x>
+      <y>301</y>
+      <w>21</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1134</x>
+      <y>266</y>
+      <w>21</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>833</x>
+      <y>483</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>This one has acces to everything
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>952</x>
+      <y>483</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>This one can't r/w in the UserDB
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1092</x>
+      <y>483</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>This one are only allowed to use the basic interface
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1155</x>
+      <y>455</y>
+      <w>91</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;80.0;50.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>462</y>
+      <w>21</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>455</y>
+      <w>77</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;80.0;60.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>469</x>
+      <y>238</y>
+      <w>301</w>
+      <h>287</h>
+    </coordinates>
+    <panel_attributes>DashBoard
+--
+- user_: Employee
+- option_ = int
+- sensorDB_ = SensorDB*
+- alarm_ = Alarm*
+- userDB_ = UserDB* 
+--
++ showMainMenu(): void
++ showSensorsMenu(): void
++ showAlarmSts(Alarm *alarm, SensorDB *sensorDB): void
++ chUser(): Login
++ onOffAlarm(boolean): void
++ showAllSensors(SensorDB*): void
++ showByType(SensorDB*): void
++ askForOption(int): int
++ addSensor(SensorDB *sensorDB): void
++ selectTypeSensor(): int
++ showAlarmMenu(Alarm alarm); void
++ changePasswd(UserDB *userDB, Employee *user): void
++ showByPerm(UserDB *userDB): void
++ delUser(UserDB *userDB): void
++ addUser(UserDB *userDB): void
++ showUsersMenu(): void
++ delSensor(SensorDB *sensorDB): void
++ getOption(): int
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>931</x>
+      <y>63</y>
+      <w>182</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Login
+--
+-user_: integer
+-passw_: integer
+--
++authenticate(int, int): DashBoard
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>203</x>
+      <y>371</y>
+      <w>217</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>Sensor
+--
+#type_: integer
+#id_: integer
+#current_: *double
+#lastday_: *double
+#lastweek_: *double
+--
++virtual showInfo(): void
++meanCurrent(): double
++meanDay(): double
++meanWeek(): double
++scan(double, double): void
++genRand(double, double): double
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>189</y>
+      <w>196</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>SensorDB
+--
+-sensors_: vector(sensor*)
+--
++getSensByType(int): Sensor[]
++getNsensByType(int): int
++getAsensor(int): Sensor
++showByType(int): void
++showAll(): void
++showOne(int, int): void
++getNumSens(): int
++getNextId(): int
++save(): int
++addSensor(int type, int id): void
++delSensor(int id): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1015</x>
+      <y>119</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>749</x>
+      <y>273</y>
+      <w>203</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>406</x>
+      <y>294</y>
+      <w>77</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>301</x>
+      <y>343</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>119</x>
+      <y>672</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>RGB</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>196</x>
+      <y>672</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Temperature</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>273</x>
+      <y>672</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Humidity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>672</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>AirQuality</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>427</x>
+      <y>672</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>LighQuality</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>14</x>
+      <y>672</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Termic</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>91</y>
+      <w>189</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Alarm
+--
+#onoff_: boolean
+#intrusion_: boolean
+--
++readMagSens(*SensorDB): boolean
++callPolice(*SensorDB): void
++showInfo(SensorDB *sensDB): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>56</x>
+      <y>630</y>
+      <w>84</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>147</x>
+      <y>630</y>
+      <w>21</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>231</x>
+      <y>511</y>
+      <w>70</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>301</x>
+      <y>511</y>
+      <w>21</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>511</y>
+      <w>91</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>511</y>
+      <w>147</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>301</x>
+      <y>168</y>
+      <w>21</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>406</x>
+      <y>119</y>
+      <w>224</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;300.0;10.0;300.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>672</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Magnetic</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>602</x>
+      <y>658</y>
+      <w>154</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Magnetic sensors for doors and windows.The alarm system will use these mostly
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>371</x>
+      <y>511</y>
+      <w>182</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>567</x>
+      <y>672</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>112</y>
+      <w>175</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Intrusion will be true if readSensors returned false for 
+30 seconds straight. readSensors will have a 100ms refresh time
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>168</x>
+      <y>119</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;30.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>98</x>
+      <y>581</y>
+      <w>126</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Camera
+--
+#resolution: [uint, uint]
+#pixel: (uint, uint, uint)
+--
++ genRand(): uint</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>147</x>
+      <y>511</y>
+      <w>119</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>42</x>
+      <y>399</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Refresh times:
+actual: 0.5 seconds
+lastday: 30 minutes
+lastweek: 1 hour
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>147</x>
+      <y>427</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1099</x>
+      <y>259</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+</diagram>

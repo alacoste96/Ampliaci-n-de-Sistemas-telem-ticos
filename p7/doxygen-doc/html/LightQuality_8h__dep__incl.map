@@ -1,0 +1,10 @@
+<map id="LightQuality.h" name="LightQuality.h">
+<area shape="rect" id="node1" title="This file contains the declaration of the LightQuality class." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title=" " alt="" coords="33,304,115,331"/>
+<area shape="rect" id="node3" href="$SensorDB_8h.html" title="This file contains the declaration of the SensorDB class." alt="" coords="103,80,200,107"/>
+<area shape="rect" id="node4" href="$Alarm_8h.html" title="This file contains the declaration of the Alarm class." alt="" coords="115,155,188,181"/>
+<area shape="rect" id="node6" href="$DashBoard_8h.html" title="This file contains the declaration of the DashBoard class." alt="" coords="249,229,355,256"/>
+<area shape="rect" id="node8" href="$SensorDB_8cpp.html" title=" " alt="" coords="263,155,375,181"/>
+<area shape="rect" id="node5" href="$Alarm_8cpp.html" title=" " alt="" coords="137,229,225,256"/>
+<area shape="rect" id="node7" href="$DashBoard_8cpp.html" title=" " alt="" coords="242,304,362,331"/>
+</map>

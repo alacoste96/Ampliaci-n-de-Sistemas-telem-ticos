@@ -1,0 +1,4 @@
+<map id="SensorDB::delSensor" name="SensorDB::delSensor">
+<area shape="rect" id="node1" title="Delete the sensor with the specified ID from the database." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="211,5,387,32"/>
+</map>

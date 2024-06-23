@@ -1,0 +1,8 @@
+<map id="DashBoard::showByType" name="DashBoard::showByType">
+<area shape="rect" id="node1" title="Displays information about sensors of a specific type." alt="" coords="5,56,188,83"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#a950fbdc2d6a1a800705f364588289032" title=" " alt="" coords="261,5,426,32"/>
+<area shape="rect" id="node3" href="$classDashBoard.html#af81e9a8de62ae3f10880d076782905dd" title="Prompts the user to select a sensor type." alt="" coords="236,56,451,83"/>
+<area shape="rect" id="node5" href="$classSensorDB.html#a7375a8cc9c19a8291add51e62abe1b6a" title="Displays information about sensors of the specified type in the database." alt="" coords="256,107,431,133"/>
+<area shape="rect" id="node4" href="$classDashBoard.html#a3717ec3fe9e85a46a7da52185bff6832" title="Prompts the user to select an option." alt="" coords="499,56,685,83"/>
+<area shape="rect" id="node6" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="504,107,680,133"/>
+</map>

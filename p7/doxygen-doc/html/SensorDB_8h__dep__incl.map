@@ -1,0 +1,9 @@
+<map id="SensorDB.h" name="SensorDB.h">
+<area shape="rect" id="node1" title="This file contains the declaration of the SensorDB class." alt="" coords="231,5,329,32"/>
+<area shape="rect" id="node2" href="$Alarm_8h.html" title="This file contains the declaration of the Alarm class." alt="" coords="178,80,251,107"/>
+<area shape="rect" id="node4" href="$DashBoard_8h.html" title="This file contains the declaration of the DashBoard class." alt="" coords="13,155,118,181"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="227,229,309,256"/>
+<area shape="rect" id="node7" href="$SensorDB_8cpp.html" title=" " alt="" coords="356,80,468,107"/>
+<area shape="rect" id="node3" href="$Alarm_8cpp.html" title=" " alt="" coords="143,155,231,181"/>
+<area shape="rect" id="node5" href="$DashBoard_8cpp.html" title=" " alt="" coords="5,229,125,256"/>
+</map>

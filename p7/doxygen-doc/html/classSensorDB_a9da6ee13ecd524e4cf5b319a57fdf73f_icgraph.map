@@ -1,0 +1,6 @@
+<map id="SensorDB::addSensor" name="SensorDB::addSensor">
+<area shape="rect" id="node1" title="Adds a new sensor to the database." alt="" coords="325,31,487,57"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#abe8fd5cbc5df29e25bcbb32548aece1a" title="Adds a new sensor to the database." alt="" coords="108,5,277,32"/>
+<area shape="rect" id="node4" href="$classSensorDB.html#ae4586eea7afbb6d11639e8792d543307" title="Constructor for the SensorDB class." alt="" coords="115,56,271,83"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>

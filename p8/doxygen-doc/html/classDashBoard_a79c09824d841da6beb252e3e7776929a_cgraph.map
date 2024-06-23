@@ -1,0 +1,5 @@
+<map id="DashBoard::showByPerm" name="DashBoard::showByPerm">
+<area shape="rect" id="node1" title="Displays information about users by permission level." alt="" coords="5,31,192,57"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#a3717ec3fe9e85a46a7da52185bff6832" title="Prompts the user to select an option." alt="" coords="240,5,427,32"/>
+<area shape="rect" id="node3" href="$classUserDB.html#a57f37612708497d90abac5391debe204" title=" " alt="" coords="247,56,419,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Termic" name="Termic">
+<area shape="rect" id="node1" title="Represents a thermal Camera Sensor." alt="" coords="24,520,115,597"/>
+<area shape="rect" id="node2" href="$classCamera.html" title="Represents a camera Sensor." alt="" coords="15,351,124,472"/>
+<area shape="rect" id="node3" href="$classSensor.html" title="Represents a generic sensor." alt="" coords="5,5,133,303"/>
+</map>

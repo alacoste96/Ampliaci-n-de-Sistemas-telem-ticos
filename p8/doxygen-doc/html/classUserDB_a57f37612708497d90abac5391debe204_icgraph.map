@@ -1,0 +1,8 @@
+<map id="UserDB::getEmployees" name="UserDB::getEmployees">
+<area shape="rect" id="node1" title=" " alt="" coords="249,107,421,133"/>
+<area shape="rect" id="node2" href="$classLogin.html#a7471f36d34b311eef7bdc7cbb8e01129" title="Authenticates the user." alt="" coords="30,5,177,32"/>
+<area shape="rect" id="node3" href="$classDashBoard.html#a611a265eb4312ceed7a77ce7667d8a63" title="Changes the password of a user." alt="" coords="5,56,201,83"/>
+<area shape="rect" id="node4" href="$classDashBoard.html#aaf481a338d303ca38ca718df8c563197" title="Deletes a user from the database." alt="" coords="28,107,179,133"/>
+<area shape="rect" id="node5" href="$classDashBoard.html#af3f120ec9f45160db0f25bca73d057a4" title="Displays information about all users." alt="" coords="9,157,198,184"/>
+<area shape="rect" id="node6" href="$classDashBoard.html#a79c09824d841da6beb252e3e7776929a" title="Displays information about users by permission level." alt="" coords="10,208,197,235"/>
+</map>

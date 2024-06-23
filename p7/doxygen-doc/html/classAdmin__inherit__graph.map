@@ -1,0 +1,4 @@
+<map id="Admin" name="Admin">
+<area shape="rect" id="node1" title="Represents an Administrator, which is a type of Employee." alt="" coords="34,336,123,413"/>
+<area shape="rect" id="node2" href="$classEmployee.html" title="Represents an Employee." alt="" coords="5,5,152,288"/>
+</map>

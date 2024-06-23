@@ -1,0 +1,4 @@
+<map id="Sensor::scan" name="Sensor::scan">
+<area shape="rect" id="node1" title="Scans the sensor and updates its current value." alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="$classSensor.html#a515f2323f860ba914807206685061ad5" title="Generates a random value within the specified range. It gets current date in microseconds as seed for..." alt="" coords="157,5,288,32"/>
+</map>

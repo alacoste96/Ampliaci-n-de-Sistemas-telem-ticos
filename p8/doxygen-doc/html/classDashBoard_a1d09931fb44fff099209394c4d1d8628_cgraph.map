@@ -1,0 +1,8 @@
+<map id="DashBoard::showAlarmSts" name="DashBoard::showAlarmSts">
+<area shape="rect" id="node1" title="Displays the status of the alarm." alt="" coords="5,31,200,57"/>
+<area shape="rect" id="node2" href="$classAlarm.html#a653b5130667d22d89c233f216b45438c" title="Displays information about the alarm like if it is turned on or off, and if an intrusion has been det..." alt="" coords="248,31,376,57"/>
+<area shape="rect" id="node3" href="$classAlarm.html#a250bdda1b73aea36374bd9aca8acc2a2" title="Calls the police if an intrusion is detected." alt="" coords="424,31,555,57"/>
+<area shape="rect" id="node4" href="$classAlarm.html#a54927a24ae6cdcd3e430acf59355d869" title="Reads magnetic sensors to detect intrusions." alt="" coords="603,31,760,57"/>
+<area shape="rect" id="node5" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="808,5,984,32"/>
+<area shape="rect" id="node6" href="$classSensorDB.html#a950fbdc2d6a1a800705f364588289032" title=" " alt="" coords="813,56,979,83"/>
+</map>

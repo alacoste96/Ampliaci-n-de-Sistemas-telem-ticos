@@ -1,0 +1,4 @@
+<map id="SensorDB::showByType" name="SensorDB::showByType">
+<area shape="rect" id="node1" title="Displays information about sensors of the specified type in the database." alt="" coords="236,5,411,32"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#af822fdb9c274cd77dba3c95714e5821b" title="Displays information about sensors of a specific type." alt="" coords="5,5,188,32"/>
+</map>

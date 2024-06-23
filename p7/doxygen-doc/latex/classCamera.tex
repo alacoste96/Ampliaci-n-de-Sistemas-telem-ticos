@@ -1,0 +1,248 @@
+\hypertarget{classCamera}{}\doxysection{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+
+
+Represents a camera \mbox{\hyperlink{classSensor}{Sensor}}.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+
+
+Inheritance diagram for Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classCamera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCamera_add6ac770920522b54a7c641b79bb96f8}{Camera}} (int id=0, int type=0, std\+::tuple$<$ uint, uint $>$ resolution=std\+::make\+\_\+tuple(10, 10))
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classCamera}{Camera}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a2445e50f20d4d78314624e268b344ea1}{show\+Info}} () override
+\begin{DoxyCompactList}\small\item\em Displays information about the camera sensor. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{classCamera_a36d0907bd98b395f19509b2ab8b2ed8d}{gen\+Rand}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random unsigned integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::tuple$<$ uint, uint $>$ \mbox{\hyperlink{classCamera_a19f4777b6af850c19370cc821d327138}{resolution\+\_\+}}
+\item 
+std\+::tuple$<$ uint, uint, uint $>$ \mbox{\hyperlink{classCamera_a15a22e136ccc31c7fa1128887eb55110}{pixel\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a camera \mbox{\hyperlink{classSensor}{Sensor}}. 
+
+This class represents a camera sensor, which is a type of sensor with resolution and pixel information. 
+
+Definition at line 20 of file Camera.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCamera_add6ac770920522b54a7c641b79bb96f8}\label{classCamera_add6ac770920522b54a7c641b79bb96f8}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{type = {\ttfamily 0},  }\item[{std\+::tuple$<$ uint, uint $>$}]{resolution = {\ttfamily std\+:\+:make\+\_\+tuple(10,~10)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classCamera}{Camera}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Unique identifier of the camera sensor. \\
+\hline
+{\em type} & Type of the camera sensor. \\
+\hline
+{\em resolution} & Resolution of the camera sensor (width x height). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file Camera.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                                                \{}
+\DoxyCodeLine{4     uint totres;}
+\DoxyCodeLine{5     uint C1, C2, C3;}
+\DoxyCodeLine{6     uint i;}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8     this-\/>\mbox{\hyperlink{classSensor_a850d32639622b7fa1f2bb8b15a96609b}{id\_}} = id;}
+\DoxyCodeLine{9     this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} = \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a232035a5dddc41688ebfc2772e829442}{TYPE\_CAM}};}
+\DoxyCodeLine{10     this-\/>\mbox{\hyperlink{classCamera_a19f4777b6af850c19370cc821d327138}{resolution\_}} = resolution;}
+\DoxyCodeLine{11     totres = std::get<0>(\mbox{\hyperlink{classCamera_a19f4777b6af850c19370cc821d327138}{resolution\_}}) * std::get<1>(\mbox{\hyperlink{classCamera_a19f4777b6af850c19370cc821d327138}{resolution\_}});}
+\DoxyCodeLine{12     \textcolor{keyword}{delete} [] this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}};}
+\DoxyCodeLine{13     this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}} = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[totres];}
+\DoxyCodeLine{14     \textcolor{keywordflow}{for}(i = 0; i < totres; i+=3)\{}
+\DoxyCodeLine{15         C1 = \mbox{\hyperlink{classCamera_a36d0907bd98b395f19509b2ab8b2ed8d}{Camera::genRand}}();}
+\DoxyCodeLine{16         C2 = \mbox{\hyperlink{classCamera_a36d0907bd98b395f19509b2ab8b2ed8d}{Camera::genRand}}();}
+\DoxyCodeLine{17         C3 = \mbox{\hyperlink{classCamera_a36d0907bd98b395f19509b2ab8b2ed8d}{Camera::genRand}}();}
+\DoxyCodeLine{18         this-\/>\mbox{\hyperlink{classCamera_a15a22e136ccc31c7fa1128887eb55110}{pixel\_}} = std::make\_tuple(C1, C2, C3);}
+\DoxyCodeLine{19         this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[i] = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(std::get<0>(this-\/>\mbox{\hyperlink{classCamera_a15a22e136ccc31c7fa1128887eb55110}{pixel\_}}));}
+\DoxyCodeLine{20         \textcolor{keywordflow}{if} (i+1 < totres) this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[i+1] = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(std::get<1>(this-\/>\mbox{\hyperlink{classCamera_a15a22e136ccc31c7fa1128887eb55110}{pixel\_}}));}
+\DoxyCodeLine{21         \textcolor{keywordflow}{if} (i+2 < totres) this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[i+2] = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(std::get<2>(this-\/>\mbox{\hyperlink{classCamera_a15a22e136ccc31c7fa1128887eb55110}{pixel\_}}));}
+\DoxyCodeLine{22     \}}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+
+
+References Sensor\+::current\+\_\+, gen\+Rand(), Sensor\+::id\+\_\+, pixel\+\_\+, resolution\+\_\+, Sensor\+::type\+\_\+, and TYPE\+\_\+\+CAM.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classCamera_add6ac770920522b54a7c641b79bb96f8_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCamera_a36d0907bd98b395f19509b2ab8b2ed8d}\label{classCamera_a36d0907bd98b395f19509b2ab8b2ed8d}} 
+\index{Camera@{Camera}!genRand@{genRand}}
+\index{genRand@{genRand}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{genRand()}{genRand()}}
+{\footnotesize\ttfamily uint Camera\+::gen\+Rand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a random unsigned integer. 
+
+\begin{DoxyReturn}{Returns}
+Random unsigned integer. 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Camera.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                \{}
+\DoxyCodeLine{50     \textcolor{keyword}{auto} time\_micros = std::chrono::duration\_cast<std::chrono::microseconds>(}
+\DoxyCodeLine{51     std::chrono::system\_clock::now().time\_since\_epoch()).count(); \textcolor{comment}{// getting time in microseconds}}
+\DoxyCodeLine{52     }
+\DoxyCodeLine{53     srand(time\_micros); \textcolor{comment}{// using current time in microseconds as seed for random generator}}
+\DoxyCodeLine{54     uint randNum = rand() \% 256;}
+\DoxyCodeLine{55     \textcolor{keywordflow}{return} randNum;}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+
+
+Referenced by Camera().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classCamera_a36d0907bd98b395f19509b2ab8b2ed8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCamera_a2445e50f20d4d78314624e268b344ea1}\label{classCamera_a2445e50f20d4d78314624e268b344ea1}} 
+\index{Camera@{Camera}!showInfo@{showInfo}}
+\index{showInfo@{showInfo}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{showInfo()}{showInfo()}}
+{\footnotesize\ttfamily void Camera\+::show\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays information about the camera sensor. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classSensor_a172026601607cac9b7c34e22915f1efc}{Sensor}}.
+
+
+
+Definition at line 26 of file Camera.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                 \{}
+\DoxyCodeLine{27     uint i, totres;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     totres = std::get<0>(\mbox{\hyperlink{classCamera_a19f4777b6af850c19370cc821d327138}{resolution\_}}) * std::get<1>(\mbox{\hyperlink{classCamera_a19f4777b6af850c19370cc821d327138}{resolution\_}});}
+\DoxyCodeLine{30     \textcolor{keywordflow}{switch}(this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}})\{}
+\DoxyCodeLine{31     \textcolor{keywordflow}{case} \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a654201b001c75a0d4101473f062f7e2c}{TYPE\_RGB}}:}
+\DoxyCodeLine{32         std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} << \textcolor{stringliteral}{"{}. RGB Camera.\(\backslash\)n"{}};}
+\DoxyCodeLine{33         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{34     \textcolor{keywordflow}{case} \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a6f5b146742d5df4636bf11a19dbfba8e}{TYPE\_TERMIC}}:}
+\DoxyCodeLine{35         std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>type\_ << \textcolor{stringliteral}{"{}. Termic Camera.\(\backslash\)n"{}};}
+\DoxyCodeLine{36         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{37     \textcolor{keywordflow}{case} \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a232035a5dddc41688ebfc2772e829442}{TYPE\_CAM}}:}
+\DoxyCodeLine{38         std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>type\_ << \textcolor{stringliteral}{"{}. Camera.\(\backslash\)n"{}};}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40     std::cout << \textcolor{stringliteral}{"{}Id: "{}} << this-\/>\mbox{\hyperlink{classSensor_a850d32639622b7fa1f2bb8b15a96609b}{id\_}} << std::endl;}
+\DoxyCodeLine{41     std::cout << \textcolor{stringliteral}{"{}Current:\(\backslash\)n["{}};}
+\DoxyCodeLine{42     \textcolor{keywordflow}{for}(i = 0; i < totres; i++)\{}
+\DoxyCodeLine{43         i != totres -\/1? std::cout << this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[i] << \textcolor{stringliteral}{"{}, "{}}: std::cout << this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[i] << \textcolor{stringliteral}{"{}]\(\backslash\)n"{}};}
+\DoxyCodeLine{44     \}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+
+
+References Sensor\+::current\+\_\+, Sensor\+::id\+\_\+, resolution\+\_\+, Sensor\+::type\+\_\+, TYPE\+\_\+\+CAM, TYPE\+\_\+\+RGB, and TYPE\+\_\+\+TERMIC.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCamera_a15a22e136ccc31c7fa1128887eb55110}\label{classCamera_a15a22e136ccc31c7fa1128887eb55110}} 
+\index{Camera@{Camera}!pixel\_@{pixel\_}}
+\index{pixel\_@{pixel\_}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{pixel\_}{pixel\_}}
+{\footnotesize\ttfamily std\+::tuple$<$uint, uint, uint$>$ Camera\+::pixel\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pixel information (RGB) of the camera sensor. 
+
+Definition at line 43 of file Camera.\+h.
+
+
+
+Referenced by Camera().
+
+\mbox{\Hypertarget{classCamera_a19f4777b6af850c19370cc821d327138}\label{classCamera_a19f4777b6af850c19370cc821d327138}} 
+\index{Camera@{Camera}!resolution\_@{resolution\_}}
+\index{resolution\_@{resolution\_}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{resolution\_}{resolution\_}}
+{\footnotesize\ttfamily std\+::tuple$<$uint, uint$>$ Camera\+::resolution\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolution of the camera sensor (width x height). 
+
+Definition at line 42 of file Camera.\+h.
+
+
+
+Referenced by Camera(), and show\+Info().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Camera_8h}{Camera.\+h}}\item 
+\mbox{\hyperlink{Camera_8cpp}{Camera.\+cpp}}\end{DoxyCompactItemize}

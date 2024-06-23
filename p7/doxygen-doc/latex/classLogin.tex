@@ -1,0 +1,263 @@
+\hypertarget{classLogin}{}\doxysection{Login Class Reference}
+\label{classLogin}\index{Login@{Login}}
+
+
+Represents a login session.  
+
+
+
+
+{\ttfamily \#include $<$Login.\+h$>$}
+
+
+
+Collaboration diagram for Login\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classLogin__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogin_a6cfa15e0e64b03d19cec8cc88f739d2f}{Login}} (int \mbox{\hyperlink{classLogin_a1a6e6ced9dfecb449e38d23d1db2556c}{user\+\_\+}}=0, int \mbox{\hyperlink{classLogin_ac948ed7c114c5207748617c6c6d8f09e}{passwd\+\_\+}}=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classLogin}{Login}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogin_aff8d0322a971900b1816de6ef64076ac}{authenticate}} (\mbox{\hyperlink{classUserDB}{User\+DB}} $\ast$user\+DB)
+\begin{DoxyCompactList}\small\item\em Authenticates the user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLogin_a6b3cc0e67188b375fc1852d15e199ddc}{get\+User}} ()
+\item 
+int \mbox{\hyperlink{classLogin_a1f7ab4ea90f44bfde0fc7f5e432c0284}{get\+Passwd}} ()
+\item 
+void \mbox{\hyperlink{classLogin_a3feca6ab9fb87e917c162f11eb948a72}{set\+User}} (int user)
+\item 
+void \mbox{\hyperlink{classLogin_ae92dc80c754d601bccc782bcf937cc49}{set\+Passwd}} (int passwd)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLogin_a1a6e6ced9dfecb449e38d23d1db2556c}{user\+\_\+}}
+\item 
+int \mbox{\hyperlink{classLogin_ac948ed7c114c5207748617c6c6d8f09e}{passwd\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a login session. 
+
+This class represents a login session with functionalities for authentication. 
+
+Definition at line 19 of file Login.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogin_a6cfa15e0e64b03d19cec8cc88f739d2f}\label{classLogin_a6cfa15e0e64b03d19cec8cc88f739d2f}} 
+\index{Login@{Login}!Login@{Login}}
+\index{Login@{Login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily Login\+::\+Login (\begin{DoxyParamCaption}\item[{int}]{user\+\_\+ = {\ttfamily 0},  }\item[{int}]{passwd\+\_\+ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classLogin}{Login}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+} & User NIF. \\
+\hline
+{\em passwd\+\_\+} & Password(\+ID). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                 \{}
+\DoxyCodeLine{4     this-\/>\mbox{\hyperlink{classLogin_a1a6e6ced9dfecb449e38d23d1db2556c}{user\_}} = user;}
+\DoxyCodeLine{5     this-\/>\mbox{\hyperlink{classLogin_ac948ed7c114c5207748617c6c6d8f09e}{passwd\_}} = passwd;}
+\DoxyCodeLine{6     std::cout << \textcolor{stringliteral}{"{}Login"{}} << std::endl;}
+\DoxyCodeLine{7     std::cout << \textcolor{stringliteral}{"{}introduce your NIF without the final letter: "{}} << std::endl;}
+\DoxyCodeLine{8     std::cin >> this-\/>\mbox{\hyperlink{classLogin_a1a6e6ced9dfecb449e38d23d1db2556c}{user\_}};}
+\DoxyCodeLine{9     std::cout << \textcolor{stringliteral}{"{}introduce your password: "{}} << std::endl;}
+\DoxyCodeLine{10     std::cin >> this-\/>\mbox{\hyperlink{classLogin_ac948ed7c114c5207748617c6c6d8f09e}{passwd\_}};}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+
+
+References passwd\+\_\+, and user\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogin_aff8d0322a971900b1816de6ef64076ac}\label{classLogin_aff8d0322a971900b1816de6ef64076ac}} 
+\index{Login@{Login}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily void Login\+::authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUserDB}{User\+DB}} $\ast$}]{user\+DB }\end{DoxyParamCaption})}
+
+
+
+Authenticates the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+DB} & Pointer to the \mbox{\hyperlink{classUserDB}{User\+DB}} object containing user information. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                  \{}
+\DoxyCodeLine{14     std::cout << \textcolor{stringliteral}{"{}Authenticating..."{}} << std::endl;}
+\DoxyCodeLine{15     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& employee: userDB-\/>\mbox{\hyperlink{classUserDB_a57f37612708497d90abac5391debe204}{getEmployees}}())\{}
+\DoxyCodeLine{16         \textcolor{keywordflow}{if} (employee-\/>getNif() == this-\/>user\_ \&\& employee-\/>getId() == this-\/>passwd\_)\{}
+\DoxyCodeLine{17             std::cout << \textcolor{stringliteral}{"{}You have been authenticated."{}} << std::endl;}
+\DoxyCodeLine{18             employee-\/>showinfo();}
+\DoxyCodeLine{19             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{20         \}}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22     std::cout << \textcolor{stringliteral}{"{}You have not been authenticated."{}} << std::endl;}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+
+
+References User\+DB\+::get\+Employees().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLogin_aff8d0322a971900b1816de6ef64076ac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classLogin_a1f7ab4ea90f44bfde0fc7f5e432c0284}\label{classLogin_a1f7ab4ea90f44bfde0fc7f5e432c0284}} 
+\index{Login@{Login}!getPasswd@{getPasswd}}
+\index{getPasswd@{getPasswd}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{getPasswd()}{getPasswd()}}
+{\footnotesize\ttfamily int Login\+::get\+Passwd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                 \{}
+\DoxyCodeLine{42     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classLogin_ac948ed7c114c5207748617c6c6d8f09e}{passwd\_}};}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+
+
+References passwd\+\_\+.
+
+\mbox{\Hypertarget{classLogin_a6b3cc0e67188b375fc1852d15e199ddc}\label{classLogin_a6b3cc0e67188b375fc1852d15e199ddc}} 
+\index{Login@{Login}!getUser@{getUser}}
+\index{getUser@{getUser}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily int Login\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36               \{}
+\DoxyCodeLine{37     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classLogin_a1a6e6ced9dfecb449e38d23d1db2556c}{user\_}};}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}
+
+
+References user\+\_\+.
+
+\mbox{\Hypertarget{classLogin_ae92dc80c754d601bccc782bcf937cc49}\label{classLogin_ae92dc80c754d601bccc782bcf937cc49}} 
+\index{Login@{Login}!setPasswd@{setPasswd}}
+\index{setPasswd@{setPasswd}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{setPasswd()}{setPasswd()}}
+{\footnotesize\ttfamily void Login\+::set\+Passwd (\begin{DoxyParamCaption}\item[{int}]{passwd }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                           \{}
+\DoxyCodeLine{32     this-\/>\mbox{\hyperlink{classLogin_ac948ed7c114c5207748617c6c6d8f09e}{passwd\_}} = passwd;}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+
+
+References passwd\+\_\+.
+
+\mbox{\Hypertarget{classLogin_a3feca6ab9fb87e917c162f11eb948a72}\label{classLogin_a3feca6ab9fb87e917c162f11eb948a72}} 
+\index{Login@{Login}!setUser@{setUser}}
+\index{setUser@{setUser}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{setUser()}{setUser()}}
+{\footnotesize\ttfamily void Login\+::set\+User (\begin{DoxyParamCaption}\item[{int}]{user }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                       \{}
+\DoxyCodeLine{27     this-\/>\mbox{\hyperlink{classLogin_a1a6e6ced9dfecb449e38d23d1db2556c}{user\_}} = user;}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+
+
+References user\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLogin_ac948ed7c114c5207748617c6c6d8f09e}\label{classLogin_ac948ed7c114c5207748617c6c6d8f09e}} 
+\index{Login@{Login}!passwd\_@{passwd\_}}
+\index{passwd\_@{passwd\_}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{passwd\_}{passwd\_}}
+{\footnotesize\ttfamily int Login\+::passwd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Pasword(\+ID). 
+
+Definition at line 22 of file Login.\+h.
+
+
+
+Referenced by get\+Passwd(), Login(), and set\+Passwd().
+
+\mbox{\Hypertarget{classLogin_a1a6e6ced9dfecb449e38d23d1db2556c}\label{classLogin_a1a6e6ced9dfecb449e38d23d1db2556c}} 
+\index{Login@{Login}!user\_@{user\_}}
+\index{user\_@{user\_}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{user\_}{user\_}}
+{\footnotesize\ttfamily int Login\+::user\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+User NIF. 
+
+Definition at line 21 of file Login.\+h.
+
+
+
+Referenced by get\+User(), Login(), and set\+User().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Login_8h}{Login.\+h}}\item 
+\mbox{\hyperlink{Login_8cpp}{Login.\+cpp}}\end{DoxyCompactItemize}

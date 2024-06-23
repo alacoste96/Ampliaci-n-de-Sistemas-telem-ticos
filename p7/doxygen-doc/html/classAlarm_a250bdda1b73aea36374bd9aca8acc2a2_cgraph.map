@@ -1,0 +1,6 @@
+<map id="Alarm::callPolice" name="Alarm::callPolice">
+<area shape="rect" id="node1" title="Calls the police if an intrusion is detected." alt="" coords="5,31,136,57"/>
+<area shape="rect" id="node2" href="$classAlarm.html#a54927a24ae6cdcd3e430acf59355d869" title="Reads magnetic sensors to detect intrusions." alt="" coords="184,31,341,57"/>
+<area shape="rect" id="node3" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="389,5,565,32"/>
+<area shape="rect" id="node4" href="$classSensorDB.html#a950fbdc2d6a1a800705f364588289032" title=" " alt="" coords="395,56,560,83"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="UserDB::UserDB" name="UserDB::UserDB">
+<area shape="rect" id="node1" title="Default constructor for the UserDB class." alt="" coords="5,81,133,108"/>
+<area shape="rect" id="node2" href="$classUserDB.html#af9a19b44255b13eb9d7c0d009b59ca43" title="Loads employees from a file." alt="" coords="181,81,360,108"/>
+<area shape="rect" id="node3" href="$classEmployee.html#aca27234b8db38e84d5d40872fa4fa9e5" title=" " alt="" coords="439,5,566,32"/>
+<area shape="rect" id="node4" href="$classEmployee.html#a2edaeb46a48f6f1256e2a9f5fb2f93ca" title=" " alt="" coords="435,56,570,83"/>
+<area shape="rect" id="node5" href="$classEmployee.html#a30f6d44ca9a73834f7aa5788088f394e" title=" " alt="" coords="409,107,596,133"/>
+<area shape="rect" id="node6" href="$classEmployee.html#ae91ca7949b7d063e40d24715fcaa0309" title=" " alt="" coords="408,157,597,184"/>
+</map>

@@ -1,0 +1,87 @@
+\hypertarget{classRgb}{}\doxysection{Rgb Class Reference}
+\label{classRgb}\index{Rgb@{Rgb}}
+
+
+Represents an RGB \mbox{\hyperlink{classCamera}{Camera}} \mbox{\hyperlink{classSensor}{Sensor}}.  
+
+
+
+
+{\ttfamily \#include $<$RGB.\+h$>$}
+
+
+
+Inheritance diagram for Rgb\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classRgb__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rgb\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classRgb__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRgb_aa51f91c04811bf82df25d559ecf89aea}{Rgb}} (int id=0, int type=0, std\+::tuple$<$ uint, uint $>$ resolution=std\+::make\+\_\+tuple(10, 10))
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classRgb}{Rgb}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents an RGB \mbox{\hyperlink{classCamera}{Camera}} \mbox{\hyperlink{classSensor}{Sensor}}. 
+
+This class represents an RGB sensor, which is a type of camera sensor specialized in capturing RGB images. 
+
+Definition at line 17 of file RGB.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRgb_aa51f91c04811bf82df25d559ecf89aea}\label{classRgb_aa51f91c04811bf82df25d559ecf89aea}} 
+\index{Rgb@{Rgb}!Rgb@{Rgb}}
+\index{Rgb@{Rgb}!Rgb@{Rgb}}
+\doxysubsubsection{\texorpdfstring{Rgb()}{Rgb()}}
+{\footnotesize\ttfamily Rgb\+::\+Rgb (\begin{DoxyParamCaption}\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{type = {\ttfamily 0},  }\item[{std\+::tuple$<$ uint, uint $>$}]{resolution = {\ttfamily std\+:\+:make\+\_\+tuple(10,~10)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classRgb}{Rgb}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Unique identifier of the RGB sensor. \\
+\hline
+{\em type} & Type of the RGB sensor. \\
+\hline
+{\em resolution} & Resolution of the RGB sensor. \\
+\hline
+\end{DoxyParams}
+$<$ Set the sensor type to TYPE\+\_\+\+RGB.
+
+Definition at line 25 of file RGB.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                                                                         :}
+\DoxyCodeLine{26       \mbox{\hyperlink{classCamera_add6ac770920522b54a7c641b79bb96f8}{Camera}}(\textcolor{keywordtype}{id}, type, resolution) \{}
+\DoxyCodeLine{27       this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} = \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a654201b001c75a0d4101473f062f7e2c}{TYPE\_RGB}}; }
+\DoxyCodeLine{28   \};}
+
+\end{DoxyCode}
+
+
+References Sensor\+::type\+\_\+, and TYPE\+\_\+\+RGB.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{RGB_8h}{RGB.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="SensorDB::getAsensor" name="SensorDB::getAsensor">
+<area shape="rect" id="node1" title="Retrieves a sensor with the specified ID." alt="" coords="219,31,385,57"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#a343de21f1b6c0222e662509081a7eb60" title="Deletes a sensor from the database." alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node3" href="$classSensorDB.html#a4845eccb3f093505f390b0d728c4db41" title="Displays information about the sensor with the specified ID." alt="" coords="11,56,165,83"/>
+</map>

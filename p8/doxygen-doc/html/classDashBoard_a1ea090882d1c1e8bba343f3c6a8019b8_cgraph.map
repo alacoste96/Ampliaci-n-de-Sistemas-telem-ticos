@@ -1,0 +1,5 @@
+<map id="DashBoard::onOffAlarm" name="DashBoard::onOffAlarm">
+<area shape="rect" id="node1" title="Turns the alarm on or off." alt="" coords="5,31,180,57"/>
+<area shape="rect" id="node2" href="$classAlarm.html#a40e8120c8477922664c48341d52d9621" title=" " alt="" coords="228,5,355,32"/>
+<area shape="rect" id="node3" href="$classAlarm.html#a059300d540af34ecbccaa290b8567f6e" title=" " alt="" coords="228,56,355,83"/>
+</map>

@@ -1,0 +1,84 @@
+\hypertarget{classAdmin}{}\doxysection{Admin Class Reference}
+\label{classAdmin}\index{Admin@{Admin}}
+
+
+Represents an Administrator, which is a type of \mbox{\hyperlink{classEmployee}{Employee}}.  
+
+
+
+
+{\ttfamily \#include $<$Admin.\+h$>$}
+
+
+
+Inheritance diagram for Admin\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classAdmin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Admin\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classAdmin__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAdmin_a9a297600f2ff8479440fe9fb171be370}{Admin}} (int nif=0, int id=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classAdmin}{Admin}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents an Administrator, which is a type of \mbox{\hyperlink{classEmployee}{Employee}}. 
+
+This class represents an Administrator, which is a type of \mbox{\hyperlink{classEmployee}{Employee}} with elevated permissions. He can manage everything. 
+
+Definition at line 15 of file Admin.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAdmin_a9a297600f2ff8479440fe9fb171be370}\label{classAdmin_a9a297600f2ff8479440fe9fb171be370}} 
+\index{Admin@{Admin}!Admin@{Admin}}
+\index{Admin@{Admin}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{Admin()}{Admin()}}
+{\footnotesize\ttfamily Admin\+::\+Admin (\begin{DoxyParamCaption}\item[{int}]{nif = {\ttfamily 0},  }\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classAdmin}{Admin}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nif} & National Identification Number of the administrator. \\
+\hline
+{\em id} & Unique identifier of the administrator. \\
+\hline
+\end{DoxyParams}
+$<$ Set permission level to 3 for administrators.
+
+Definition at line 22 of file Admin.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                 :\mbox{\hyperlink{classEmployee_a3269922ae71828f8797b0daeea2f394a}{Employee}}(nif, \textcolor{keywordtype}{id}) \{}
+\DoxyCodeLine{23     this-\/>\mbox{\hyperlink{classEmployee_ae817d17c217be3c719bedf02ba8e362b}{permission\_}} = 3; }
+\DoxyCodeLine{24   \};}
+
+\end{DoxyCode}
+
+
+References Employee\+::permission\+\_\+.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Admin_8h}{Admin.\+h}}\end{DoxyCompactItemize}

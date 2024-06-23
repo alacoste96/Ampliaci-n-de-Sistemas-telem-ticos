@@ -1,0 +1,4 @@
+<map id="Sensor::showInfo" name="Sensor::showInfo">
+<area shape="rect" id="node1" title="Displays information about the sensor." alt="" coords="207,5,340,32"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#a4845eccb3f093505f390b0d728c4db41" title="Displays information about the sensor with the specified ID." alt="" coords="5,5,159,32"/>
+</map>

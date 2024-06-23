@@ -1,0 +1,87 @@
+\hypertarget{classMagnetic}{}\doxysection{Magnetic Class Reference}
+\label{classMagnetic}\index{Magnetic@{Magnetic}}
+
+
+Represents a magnetic \mbox{\hyperlink{classSensor}{Sensor}}.  
+
+
+
+
+{\ttfamily \#include $<$Magnetic.\+h$>$}
+
+
+
+Inheritance diagram for Magnetic\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classMagnetic__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Magnetic\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classMagnetic__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMagnetic_a401f5b0ecea2c93cb50759d77f1acf32}{Magnetic}} (int id=0, int type=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classMagnetic}{Magnetic}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a magnetic \mbox{\hyperlink{classSensor}{Sensor}}. 
+
+This class represents a magnetic sensor, which is a type of sensor specialized in measuring magnetic fields. 
+
+Definition at line 17 of file Magnetic.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMagnetic_a401f5b0ecea2c93cb50759d77f1acf32}\label{classMagnetic_a401f5b0ecea2c93cb50759d77f1acf32}} 
+\index{Magnetic@{Magnetic}!Magnetic@{Magnetic}}
+\index{Magnetic@{Magnetic}!Magnetic@{Magnetic}}
+\doxysubsubsection{\texorpdfstring{Magnetic()}{Magnetic()}}
+{\footnotesize\ttfamily Magnetic\+::\+Magnetic (\begin{DoxyParamCaption}\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{type = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classMagnetic}{Magnetic}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Unique identisfier of the magnetic sensor. \\
+\hline
+{\em type} & Type of the magnetic sensor. \\
+\hline
+\end{DoxyParams}
+$<$ Set the sensor type to TYPE\+\_\+\+MAG.
+
+$<$ Set the initial current value for the magnetic sensor.
+
+Definition at line 24 of file Magnetic.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                                     :\mbox{\hyperlink{classSensor_a5f17a003c65b0579af226e0a38326f50}{Sensor}}(\textcolor{keywordtype}{id}, type) \{}
+\DoxyCodeLine{25       this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} = \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35acba7b4938fe4b71786674ec53684cc14}{TYPE\_MAG}}; }
+\DoxyCodeLine{26       this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[0] = 1.0; }
+\DoxyCodeLine{27   \};}
+
+\end{DoxyCode}
+
+
+References Sensor\+::current\+\_\+, Sensor\+::type\+\_\+, and TYPE\+\_\+\+MAG.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Magnetic_8h}{Magnetic.\+h}}\end{DoxyCompactItemize}

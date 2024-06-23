@@ -1,0 +1,4 @@
+<map id="Alarm::showInfo" name="Alarm::showInfo">
+<area shape="rect" id="node1" title="Displays information about the alarm like if it is turned on or off, and if an intrusion has been det..." alt="" coords="248,5,376,32"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#a1d09931fb44fff099209394c4d1d8628" title="Displays the status of the alarm." alt="" coords="5,5,200,32"/>
+</map>

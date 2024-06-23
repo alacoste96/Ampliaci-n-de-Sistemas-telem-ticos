@@ -1,0 +1,4 @@
+<map id="SensorDB::showAll" name="SensorDB::showAll">
+<area shape="rect" id="node1" title="Displays information about all sensors in the database." alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="197,5,373,32"/>
+</map>

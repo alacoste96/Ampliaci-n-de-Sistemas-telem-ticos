@@ -1,0 +1,86 @@
+\hypertarget{classHumidity}{}\doxysection{Humidity Class Reference}
+\label{classHumidity}\index{Humidity@{Humidity}}
+
+
+Represents a humidity \mbox{\hyperlink{classSensor}{Sensor}}.  
+
+
+
+
+{\ttfamily \#include $<$Humidity.\+h$>$}
+
+
+
+Inheritance diagram for Humidity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classHumidity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Humidity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classHumidity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHumidity_a324a1e751a378c9eb37adefdc9f0504f}{Humidity}} (int id=0, int type=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classHumidity}{Humidity}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a humidity \mbox{\hyperlink{classSensor}{Sensor}}. 
+
+This class represents a humidity sensor, which is a type of sensor specialized in measuring humidity. 
+
+Definition at line 17 of file Humidity.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHumidity_a324a1e751a378c9eb37adefdc9f0504f}\label{classHumidity_a324a1e751a378c9eb37adefdc9f0504f}} 
+\index{Humidity@{Humidity}!Humidity@{Humidity}}
+\index{Humidity@{Humidity}!Humidity@{Humidity}}
+\doxysubsubsection{\texorpdfstring{Humidity()}{Humidity()}}
+{\footnotesize\ttfamily Humidity\+::\+Humidity (\begin{DoxyParamCaption}\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{type = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classHumidity}{Humidity}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Unique identifier of the humidity sensor. \\
+\hline
+{\em type} & Type of the humidity sensor. \\
+\hline
+\end{DoxyParams}
+$<$ Set the sensor type to TYPE\+\_\+\+HUM.
+
+Definition at line 24 of file Humidity.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                                       :\mbox{\hyperlink{classSensor_a5f17a003c65b0579af226e0a38326f50}{Sensor}}(\textcolor{keywordtype}{id}, type) \{}
+\DoxyCodeLine{25         this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} = \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35ab6590f4c2341ffec9799f731b872925b}{TYPE\_HUM}}; }
+\DoxyCodeLine{26     \};}
+
+\end{DoxyCode}
+
+
+References Sensor\+::type\+\_\+, and TYPE\+\_\+\+HUM.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Humidity_8h}{Humidity.\+h}}\end{DoxyCompactItemize}

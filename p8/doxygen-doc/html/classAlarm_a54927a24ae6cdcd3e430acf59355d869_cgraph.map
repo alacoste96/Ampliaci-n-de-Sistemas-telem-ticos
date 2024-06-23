@@ -1,0 +1,5 @@
+<map id="Alarm::readMagSens" name="Alarm::readMagSens">
+<area shape="rect" id="node1" title="Reads magnetic sensors to detect intrusions." alt="" coords="5,31,163,57"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="211,5,387,32"/>
+<area shape="rect" id="node3" href="$classSensorDB.html#a950fbdc2d6a1a800705f364588289032" title=" " alt="" coords="216,56,381,83"/>
+</map>

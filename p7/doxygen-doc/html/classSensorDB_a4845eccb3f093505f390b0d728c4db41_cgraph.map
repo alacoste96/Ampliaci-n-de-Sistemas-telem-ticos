@@ -1,0 +1,6 @@
+<map id="SensorDB::showOne" name="SensorDB::showOne">
+<area shape="rect" id="node1" title="Displays information about the sensor with the specified ID." alt="" coords="5,31,159,57"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#ace45281a9e16900f77bd30fd31f81c95" title="Retrieves a sensor with the specified ID." alt="" coords="207,5,373,32"/>
+<area shape="rect" id="node4" href="$classSensor.html#a172026601607cac9b7c34e22915f1efc" title="Displays information about the sensor." alt="" coords="223,56,357,83"/>
+<area shape="rect" id="node3" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="421,5,597,32"/>
+</map>

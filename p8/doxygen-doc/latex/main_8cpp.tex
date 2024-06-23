@@ -1,0 +1,146 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Admin.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Employee.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Supervisor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Worker.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}User\+DB.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sensor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Temp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Air\+Quality.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Humidity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Light\+Quality.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Magnetic.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Camera.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Termic.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}RGB.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sensor\+DB.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Alarm.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Login.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Dash\+Board.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22           \{}
+\DoxyCodeLine{23     \textcolor{comment}{/*Employee *employptr;}}
+\DoxyCodeLine{24 \textcolor{comment}{    Admin admin = Admin(234, 2);}}
+\DoxyCodeLine{25 \textcolor{comment}{    Admin admin2 = Admin(234, 2);}}
+\DoxyCodeLine{26 \textcolor{comment}{    Supervisor supervisor = Supervisor(345, 3);}}
+\DoxyCodeLine{27 \textcolor{comment}{    Worker worker = Worker(456, 4);}}
+\DoxyCodeLine{28 \textcolor{comment}{    UserDB userDB = UserDB();*/}}
+\DoxyCodeLine{29     \mbox{\hyperlink{classEmployee}{Employee}} *user;}
+\DoxyCodeLine{30     \mbox{\hyperlink{classAdmin}{Admin}} admin = \mbox{\hyperlink{classAdmin}{Admin}}(234, 2);}
+\DoxyCodeLine{31     user = \&admin;}
+\DoxyCodeLine{32     \mbox{\hyperlink{classSensorDB}{SensorDB}} *sensorDB;}
+\DoxyCodeLine{33     \textcolor{keywordtype}{bool} end = \textcolor{keyword}{false}, managesens = \textcolor{keyword}{false}, modedsensdb = \textcolor{keyword}{false};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{36         sensorDB = \textcolor{keyword}{new} \mbox{\hyperlink{classSensorDB}{SensorDB}}();}
+\DoxyCodeLine{37     \} \textcolor{keywordflow}{catch}(std::bad\_alloc \&e)\{}
+\DoxyCodeLine{38         std::cerr << \textcolor{stringliteral}{"{}Function addsensor: Cannot allocate memory: "{}} << e.what() << std::endl;}
+\DoxyCodeLine{39         std::cerr << \textcolor{stringliteral}{"{}ERROR: Exiting"{}} << std::endl;}
+\DoxyCodeLine{40         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{41     \}\textcolor{keywordflow}{catch}(std::invalid\_argument \&e)\{}
+\DoxyCodeLine{42         std::cerr << \textcolor{stringliteral}{"{}Function addsensor: Invalid argument: "{}} << e.what() << std::endl;}
+\DoxyCodeLine{43         std::cerr << \textcolor{stringliteral}{"{}ERROR: Exiting"{}} << std::endl;}
+\DoxyCodeLine{44         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{45     \}\textcolor{keywordflow}{catch}(std::out\_of\_range \&e)\{}
+\DoxyCodeLine{46         std::cerr << \textcolor{stringliteral}{"{}Function addsensor: Inserted value out of range: "{}} << e.what() << std::endl;}
+\DoxyCodeLine{47         std::cerr << \textcolor{stringliteral}{"{}ERROR: Exiting"{}} << std::endl;}
+\DoxyCodeLine{48         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50     \mbox{\hyperlink{classDashBoard}{DashBoard}} dashBoard = \mbox{\hyperlink{classDashBoard}{DashBoard}}(user, sensorDB);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     std::cout << \textcolor{stringliteral}{"{}Welcome to the DashBoard. Logged as: "{}} << user-\/>\mbox{\hyperlink{classEmployee_a2b7d7915179835d1b51b6a35cf981748}{getEmployType}}() << std::endl;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordflow}{while}(!end)\{}
+\DoxyCodeLine{55         dashBoard.\mbox{\hyperlink{classDashBoard_a52141d1537657e5a6a874176bd5d01ab}{showMainMenu}}();}
+\DoxyCodeLine{56         \textcolor{keywordflow}{switch}(dashBoard.\mbox{\hyperlink{classDashBoard_a3c6b8de4ae4136fa09973ff1d7384f55}{getOption}}())\{}
+\DoxyCodeLine{57         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{58             \textcolor{keywordflow}{while}(!managesens)\{}
+\DoxyCodeLine{59                 dashBoard.\mbox{\hyperlink{classDashBoard_a110ee829819beafad009cd48071e2a65}{showSensorsMenu}}();}
+\DoxyCodeLine{60                 \textcolor{keywordflow}{switch}(dashBoard.\mbox{\hyperlink{classDashBoard_a3c6b8de4ae4136fa09973ff1d7384f55}{getOption}}())\{}
+\DoxyCodeLine{61                 \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{62                     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{63                         dashBoard.\mbox{\hyperlink{classDashBoard_abe8fd5cbc5df29e25bcbb32548aece1a}{addSensor}}(sensorDB);}
+\DoxyCodeLine{64                     \}\textcolor{keywordflow}{catch} (std::bad\_alloc \&e)\{}
+\DoxyCodeLine{65                         std::cout << \textcolor{stringliteral}{"{}Cannot allocate memory: "{}} << e.what() << std::endl;}
+\DoxyCodeLine{66                         sensorDB-\/>\mbox{\hyperlink{classSensorDB_acfcf0f1044ac1244c3e6b01571122051}{save}}();}
+\DoxyCodeLine{67                         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{68                     \}}
+\DoxyCodeLine{69                     modedsensdb = \textcolor{keyword}{true};}
+\DoxyCodeLine{70                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{71                 \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{72                     dashBoard.\mbox{\hyperlink{classDashBoard_a1b72b3ab0212bca997e4755f9670441b}{showAllSensors}}(sensorDB);}
+\DoxyCodeLine{73                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{75                     dashBoard.\mbox{\hyperlink{classDashBoard_af822fdb9c274cd77dba3c95714e5821b}{showByType}}(sensorDB);}
+\DoxyCodeLine{76                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{77                 \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{78                     managesens = \textcolor{keyword}{true};}
+\DoxyCodeLine{79                 \}}
+\DoxyCodeLine{80             \}}
+\DoxyCodeLine{81         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{82             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{83         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{84             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{85         \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{86             end = \textcolor{keyword}{true};}
+\DoxyCodeLine{87             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{88         \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{89             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{90         \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{91             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{92         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{93             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{94         \}}
+\DoxyCodeLine{95         managesens = \textcolor{keyword}{false};}
+\DoxyCodeLine{96         \textcolor{keywordflow}{if} (modedsensdb)\{}
+\DoxyCodeLine{97             \textcolor{keywordflow}{if}(!sensorDB-\/>\mbox{\hyperlink{classSensorDB_acfcf0f1044ac1244c3e6b01571122051}{save}}())\{}
+\DoxyCodeLine{98                 \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{99             \}}
+\DoxyCodeLine{100             modedsensdb = \textcolor{keyword}{false};}
+\DoxyCodeLine{101         \}}
+\DoxyCodeLine{102     \}}
+\DoxyCodeLine{103     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{104 \}}
+
+\end{DoxyCode}
+
+
+References Dash\+Board\+::add\+Sensor(), Employee\+::get\+Employ\+Type(), Dash\+Board\+::get\+Option(), Sensor\+DB\+::save(), Dash\+Board\+::show\+All\+Sensors(), Dash\+Board\+::show\+By\+Type(), Dash\+Board\+::show\+Main\+Menu(), and Dash\+Board\+::show\+Sensors\+Menu().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

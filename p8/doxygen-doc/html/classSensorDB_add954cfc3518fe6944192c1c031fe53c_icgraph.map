@@ -1,0 +1,4 @@
+<map id="SensorDB::getNextId" name="SensorDB::getNextId">
+<area shape="rect" id="node1" title="Retrieves the next available ID for a new sensor." alt="" coords="223,5,380,32"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#abe8fd5cbc5df29e25bcbb32548aece1a" title="Adds a new sensor to the database." alt="" coords="5,5,175,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="DashBoard::delSensor" name="DashBoard::delSensor">
+<area shape="rect" id="node1" title="Deletes a sensor from the database." alt="" coords="5,81,171,108"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#a3717ec3fe9e85a46a7da52185bff6832" title="Prompts the user to select an option." alt="" coords="219,5,405,32"/>
+<area shape="rect" id="node3" href="$classSensorDB.html#a4ef26182e933b03975a6fa4f66e24027" title="Delete the sensor with the specified ID from the database." alt="" coords="233,56,391,83"/>
+<area shape="rect" id="node5" href="$classSensorDB.html#ace45281a9e16900f77bd30fd31f81c95" title="Retrieves a sensor with the specified ID." alt="" coords="229,107,395,133"/>
+<area shape="rect" id="node6" href="$classSensorDB.html#a950fbdc2d6a1a800705f364588289032" title=" " alt="" coords="229,157,395,184"/>
+<area shape="rect" id="node4" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="453,81,629,108"/>
+</map>

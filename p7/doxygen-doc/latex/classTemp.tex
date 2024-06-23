@@ -1,0 +1,86 @@
+\hypertarget{classTemp}{}\doxysection{Temp Class Reference}
+\label{classTemp}\index{Temp@{Temp}}
+
+
+Represents a temperature \mbox{\hyperlink{classSensor}{Sensor}}.  
+
+
+
+
+{\ttfamily \#include $<$Temp.\+h$>$}
+
+
+
+Inheritance diagram for Temp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classTemp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Temp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classTemp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTemp_a669d62b148217c3c95d960cc94cedcb5}{Temp}} (int id=0, int type=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classTemp}{Temp}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a temperature \mbox{\hyperlink{classSensor}{Sensor}}. 
+
+This class represents a temperature sensor, which is a type of sensor specialized in measuring temperature. 
+
+Definition at line 17 of file Temp.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTemp_a669d62b148217c3c95d960cc94cedcb5}\label{classTemp_a669d62b148217c3c95d960cc94cedcb5}} 
+\index{Temp@{Temp}!Temp@{Temp}}
+\index{Temp@{Temp}!Temp@{Temp}}
+\doxysubsubsection{\texorpdfstring{Temp()}{Temp()}}
+{\footnotesize\ttfamily Temp\+::\+Temp (\begin{DoxyParamCaption}\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{type = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{classTemp}{Temp}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Unique identifier of the temperature sensor. \\
+\hline
+{\em type} & Type of the temperature sensor. \\
+\hline
+\end{DoxyParams}
+$<$ Set the sensor type to TYPE\+\_\+\+TEMP.
+
+Definition at line 24 of file Temp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                                   :\mbox{\hyperlink{classSensor_a5f17a003c65b0579af226e0a38326f50}{Sensor}}(\textcolor{keywordtype}{id}, type) \{}
+\DoxyCodeLine{25         this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} = \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35aec8bbda4c558fae85267a7aecfbdd163}{TYPE\_TEMP}}; }
+\DoxyCodeLine{26     \};}
+
+\end{DoxyCode}
+
+
+References Sensor\+::type\+\_\+, and TYPE\+\_\+\+TEMP.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Temp_8h}{Temp.\+h}}\end{DoxyCompactItemize}

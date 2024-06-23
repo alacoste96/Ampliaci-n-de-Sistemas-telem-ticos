@@ -1,0 +1,320 @@
+\hypertarget{classAlarm}{}\doxysection{Alarm Class Reference}
+\label{classAlarm}\index{Alarm@{Alarm}}
+
+
+Represents an \mbox{\hyperlink{classAlarm}{Alarm}} system.  
+
+
+
+
+{\ttfamily \#include $<$Alarm.\+h$>$}
+
+
+
+Collaboration diagram for Alarm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classAlarm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAlarm_a2250be820f6d90d72a0ad5ee02f7b3c6}{Alarm}} (bool onoff=false, bool intrusion=false)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classAlarm}{Alarm}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarm_a059300d540af34ecbccaa290b8567f6e}{set\+On\+Off}} (bool onoff)
+\item 
+void \mbox{\hyperlink{classAlarm_adde8e028f259176a0bd6cbec3da4a230}{set\+Intrusion}} (bool intrusion)
+\item 
+bool \mbox{\hyperlink{classAlarm_a40e8120c8477922664c48341d52d9621}{get\+On\+Off}} ()
+\item 
+bool \mbox{\hyperlink{classAlarm_a3db4e98c5ec6e9babe88ddfab090002c}{get\+Intrusion}} ()
+\item 
+bool \mbox{\hyperlink{classAlarm_a54927a24ae6cdcd3e430acf59355d869}{read\+Mag\+Sens}} (\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$sens\+DB)
+\begin{DoxyCompactList}\small\item\em Reads magnetic sensors to detect intrusions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarm_a250bdda1b73aea36374bd9aca8acc2a2}{call\+Police}} (\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$sens\+DB)
+\begin{DoxyCompactList}\small\item\em Calls the police if an intrusion is detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classAlarm_a3c75aa7cd9d3f74ee06d7b66fd0ee1e2}{onoff\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}{intrusion\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an \mbox{\hyperlink{classAlarm}{Alarm}} system. 
+
+This class represents an alarm system with functionalities such as turning on/off the alarm, detecting intrusions, reading magnetic sensors, and calling the police if necessary. 
+
+Definition at line 18 of file Alarm.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAlarm_a2250be820f6d90d72a0ad5ee02f7b3c6}\label{classAlarm_a2250be820f6d90d72a0ad5ee02f7b3c6}} 
+\index{Alarm@{Alarm}!Alarm@{Alarm}}
+\index{Alarm@{Alarm}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{Alarm()}{Alarm()}}
+{\footnotesize\ttfamily Alarm\+::\+Alarm (\begin{DoxyParamCaption}\item[{bool}]{onoff = {\ttfamily false},  }\item[{bool}]{intrusion = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classAlarm}{Alarm}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em onoff} & Initial state of the alarm (true for on, false for off). \\
+\hline
+{\em intrusion} & Initial state of the intrusion detection (true if intrusion detected, false otherwise). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file Alarm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                        \{}
+\DoxyCodeLine{4     this-\/>\mbox{\hyperlink{classAlarm_a3c75aa7cd9d3f74ee06d7b66fd0ee1e2}{onoff\_}} = onoff;}
+\DoxyCodeLine{5     this-\/>\mbox{\hyperlink{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}{intrusion\_}} = intrusion;}
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+
+
+References intrusion\+\_\+, and onoff\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAlarm_a250bdda1b73aea36374bd9aca8acc2a2}\label{classAlarm_a250bdda1b73aea36374bd9aca8acc2a2}} 
+\index{Alarm@{Alarm}!callPolice@{callPolice}}
+\index{callPolice@{callPolice}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{callPolice()}{callPolice()}}
+{\footnotesize\ttfamily void Alarm\+::call\+Police (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$}]{sens\+DB }\end{DoxyParamCaption})}
+
+
+
+Calls the police if an intrusion is detected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sens\+DB} & Pointer to the \mbox{\hyperlink{classSensorDB}{Sensor\+DB}} object containing information about sensors. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Alarm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                   \{}
+\DoxyCodeLine{45     this-\/>\mbox{\hyperlink{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}{intrusion\_}} = \mbox{\hyperlink{classAlarm_a54927a24ae6cdcd3e430acf59355d869}{readMagSens}}(sensDB);}
+\DoxyCodeLine{46     \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}{intrusion\_}})\{}
+\DoxyCodeLine{47         std::cout << \textcolor{stringliteral}{"{}Police called!"{}} << std::endl;}
+\DoxyCodeLine{48     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{49         std::cout << \textcolor{stringliteral}{"{}Police not called!"{}} << std::endl;}
+\DoxyCodeLine{50     \}}
+\DoxyCodeLine{51 \}}
+
+\end{DoxyCode}
+
+
+References intrusion\+\_\+, and read\+Mag\+Sens().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlarm_a250bdda1b73aea36374bd9aca8acc2a2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAlarm_a3db4e98c5ec6e9babe88ddfab090002c}\label{classAlarm_a3db4e98c5ec6e9babe88ddfab090002c}} 
+\index{Alarm@{Alarm}!getIntrusion@{getIntrusion}}
+\index{getIntrusion@{getIntrusion}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{getIntrusion()}{getIntrusion()}}
+{\footnotesize\ttfamily bool Alarm\+::get\+Intrusion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file Alarm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                     \{}
+\DoxyCodeLine{20     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}{intrusion\_}};}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+References intrusion\+\_\+.
+
+\mbox{\Hypertarget{classAlarm_a40e8120c8477922664c48341d52d9621}\label{classAlarm_a40e8120c8477922664c48341d52d9621}} 
+\index{Alarm@{Alarm}!getOnOff@{getOnOff}}
+\index{getOnOff@{getOnOff}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{getOnOff()}{getOnOff()}}
+{\footnotesize\ttfamily bool Alarm\+::get\+On\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Alarm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                 \{}
+\DoxyCodeLine{25     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAlarm_a3c75aa7cd9d3f74ee06d7b66fd0ee1e2}{onoff\_}};}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}
+
+
+References onoff\+\_\+.
+
+\mbox{\Hypertarget{classAlarm_a54927a24ae6cdcd3e430acf59355d869}\label{classAlarm_a54927a24ae6cdcd3e430acf59355d869}} 
+\index{Alarm@{Alarm}!readMagSens@{readMagSens}}
+\index{readMagSens@{readMagSens}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{readMagSens()}{readMagSens()}}
+{\footnotesize\ttfamily bool Alarm\+::read\+Mag\+Sens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$}]{sens\+DB }\end{DoxyParamCaption})}
+
+
+
+Reads magnetic sensors to detect intrusions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sens\+DB} & Pointer to the \mbox{\hyperlink{classSensorDB}{Sensor\+DB}} object containing information about sensors. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if an intrusion is detected, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Alarm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                                    \{}
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} i, nsens;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     nsens = sensDB-\/>\mbox{\hyperlink{classSensorDB_a2f2b687ce1528185425613f79addf18e}{getNumSens}}();}
+\DoxyCodeLine{33     \textcolor{keywordflow}{for}(i = 0; i < nsens; i++)\{}
+\DoxyCodeLine{34         \textcolor{keywordflow}{if}(sensDB-\/>\mbox{\hyperlink{classSensorDB_a950fbdc2d6a1a800705f364588289032}{getSensors}}()[i]-\/>getType() == \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35acba7b4938fe4b71786674ec53684cc14}{TYPE\_MAG}})\{}
+\DoxyCodeLine{35             \textcolor{keywordflow}{if}(sensDB-\/>\mbox{\hyperlink{classSensorDB_a950fbdc2d6a1a800705f364588289032}{getSensors}}()[i]-\/>getCurrent()[0] < 1.0)\{}
+\DoxyCodeLine{36                 this-\/>\mbox{\hyperlink{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}{intrusion\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{37             \}}
+\DoxyCodeLine{38         \}}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}{intrusion\_}};}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+
+
+References Sensor\+DB\+::get\+Num\+Sens(), Sensor\+DB\+::get\+Sensors(), intrusion\+\_\+, and TYPE\+\_\+\+MAG.
+
+
+
+Referenced by call\+Police().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlarm_a54927a24ae6cdcd3e430acf59355d869_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classAlarm_a54927a24ae6cdcd3e430acf59355d869_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAlarm_adde8e028f259176a0bd6cbec3da4a230}\label{classAlarm_adde8e028f259176a0bd6cbec3da4a230}} 
+\index{Alarm@{Alarm}!setIntrusion@{setIntrusion}}
+\index{setIntrusion@{setIntrusion}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{setIntrusion()}{setIntrusion()}}
+{\footnotesize\ttfamily void Alarm\+::set\+Intrusion (\begin{DoxyParamCaption}\item[{bool}]{intrusion }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Alarm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9                                   \{}
+\DoxyCodeLine{10     this-\/>\mbox{\hyperlink{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}{intrusion\_}} = intrusion;}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+
+
+References intrusion\+\_\+.
+
+\mbox{\Hypertarget{classAlarm_a059300d540af34ecbccaa290b8567f6e}\label{classAlarm_a059300d540af34ecbccaa290b8567f6e}} 
+\index{Alarm@{Alarm}!setOnOff@{setOnOff}}
+\index{setOnOff@{setOnOff}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{setOnOff()}{setOnOff()}}
+{\footnotesize\ttfamily void Alarm\+::set\+On\+Off (\begin{DoxyParamCaption}\item[{bool}]{onoff }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file Alarm.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                           \{}
+\DoxyCodeLine{15     this-\/>\mbox{\hyperlink{classAlarm_a3c75aa7cd9d3f74ee06d7b66fd0ee1e2}{onoff\_}} = onoff;}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+
+
+References onoff\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}\label{classAlarm_a063c6a216cfa244dabb083c1f8fb8305}} 
+\index{Alarm@{Alarm}!intrusion\_@{intrusion\_}}
+\index{intrusion\_@{intrusion\_}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{intrusion\_}{intrusion\_}}
+{\footnotesize\ttfamily bool Alarm\+::intrusion\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Indicates whether an intrusion has been detected. 
+
+Definition at line 21 of file Alarm.\+h.
+
+
+
+Referenced by Alarm(), call\+Police(), get\+Intrusion(), read\+Mag\+Sens(), and set\+Intrusion().
+
+\mbox{\Hypertarget{classAlarm_a3c75aa7cd9d3f74ee06d7b66fd0ee1e2}\label{classAlarm_a3c75aa7cd9d3f74ee06d7b66fd0ee1e2}} 
+\index{Alarm@{Alarm}!onoff\_@{onoff\_}}
+\index{onoff\_@{onoff\_}!Alarm@{Alarm}}
+\doxysubsubsection{\texorpdfstring{onoff\_}{onoff\_}}
+{\footnotesize\ttfamily bool Alarm\+::onoff\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Indicates whether the alarm is turned on or off. 
+
+Definition at line 20 of file Alarm.\+h.
+
+
+
+Referenced by Alarm(), get\+On\+Off(), and set\+On\+Off().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Alarm_8h}{Alarm.\+h}}\item 
+\mbox{\hyperlink{Alarm_8cpp}{Alarm.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="DashBoard::selectTypeSensor" name="DashBoard::selectTypeSensor">
+<area shape="rect" id="node1" title="Prompts the user to select a sensor type." alt="" coords="236,31,451,57"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#abe8fd5cbc5df29e25bcbb32548aece1a" title="Adds a new sensor to the database." alt="" coords="12,5,181,32"/>
+<area shape="rect" id="node3" href="$classDashBoard.html#af822fdb9c274cd77dba3c95714e5821b" title="Displays information about sensors of a specific type." alt="" coords="5,56,188,83"/>
+</map>

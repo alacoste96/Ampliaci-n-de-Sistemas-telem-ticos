@@ -1,0 +1,280 @@
+\hypertarget{classUserDB}{}\doxysection{User\+DB Class Reference}
+\label{classUserDB}\index{UserDB@{UserDB}}
+
+
+Represents a User\textquotesingle{}s database.  
+
+
+
+
+{\ttfamily \#include $<$User\+DB.\+h$>$}
+
+
+
+Collaboration diagram for User\+DB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classUserDB__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUserDB_a81582cbea1328ad9cf569f7fb663ff5a}{User\+DB}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classUserDB}{User\+DB}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUserDB_a1022195f22002b004df9e8e00cf7be71}{show\+All}} ()
+\begin{DoxyCompactList}\small\item\em Displays information about all employees in the database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUserDB_a6740382ca144dc9e00eb346e47d8ac18}{show\+By\+Perm}} (int permission)
+\begin{DoxyCompactList}\small\item\em Displays information about employees with a specific permission level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUserDB_a979439732671d9803fed40a386af3d31}{add\+User}} (\mbox{\hyperlink{classEmployee}{Employee}} $\ast$employee)
+\begin{DoxyCompactList}\small\item\em Adds a new employee to the database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUserDB_ab3629f15258b93ad3e4d3eb6333fb6b3}{mod\+User}} (int id, \mbox{\hyperlink{classEmployee}{Employee}} $\ast$employee)
+\begin{DoxyCompactList}\small\item\em Modifies an existing employee in the database. \end{DoxyCompactList}\item 
+std\+::set$<$ \mbox{\hyperlink{classEmployee}{Employee}} $\ast$, \mbox{\hyperlink{structEmployeeNifCompare}{Employee\+Nif\+Compare}} $>$ \mbox{\hyperlink{classUserDB_a57f37612708497d90abac5391debe204}{get\+Employees}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::set$<$ \mbox{\hyperlink{classEmployee}{Employee}} $\ast$, \mbox{\hyperlink{structEmployeeNifCompare}{Employee\+Nif\+Compare}} $>$ \mbox{\hyperlink{classUserDB_a6dca465b93d900ab162ead15057c587e}{employees\+\_\+}}
+\item 
+int \mbox{\hyperlink{classUserDB_a8099dbb7d391717be5f9343b3130a144}{num\+\_\+employees\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a User\textquotesingle{}s database. 
+
+This class is a container for the users. It is a set of employees and it is used to manage them. 
+
+Definition at line 34 of file User\+DB.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUserDB_a81582cbea1328ad9cf569f7fb663ff5a}\label{classUserDB_a81582cbea1328ad9cf569f7fb663ff5a}} 
+\index{UserDB@{UserDB}!UserDB@{UserDB}}
+\index{UserDB@{UserDB}!UserDB@{UserDB}}
+\doxysubsubsection{\texorpdfstring{UserDB()}{UserDB()}}
+{\footnotesize\ttfamily User\+DB\+::\+User\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classUserDB}{User\+DB}} class. 
+
+
+
+Definition at line 3 of file User\+DB.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                \{}
+\DoxyCodeLine{4     this-\/>\mbox{\hyperlink{classUserDB_a8099dbb7d391717be5f9343b3130a144}{num\_employees\_}} = 0;}
+\DoxyCodeLine{5 \}}
+
+\end{DoxyCode}
+
+
+References num\+\_\+employees\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUserDB_a979439732671d9803fed40a386af3d31}\label{classUserDB_a979439732671d9803fed40a386af3d31}} 
+\index{UserDB@{UserDB}!addUser@{addUser}}
+\index{addUser@{addUser}!UserDB@{UserDB}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void User\+DB\+::add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEmployee}{Employee}} $\ast$}]{employee }\end{DoxyParamCaption})}
+
+
+
+Adds a new employee to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee} & Pointer to the \mbox{\hyperlink{classEmployee}{Employee}} object to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file User\+DB.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                  \{}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     std::cout << \textcolor{stringliteral}{"{}Adding user..."{}} << std::endl;}
+\DoxyCodeLine{11     \mbox{\hyperlink{classUserDB_a6dca465b93d900ab162ead15057c587e}{employees\_}}.insert(employee);}
+\DoxyCodeLine{12     \mbox{\hyperlink{classUserDB_a8099dbb7d391717be5f9343b3130a144}{num\_employees\_}}++;}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+References employees\+\_\+, and num\+\_\+employees\+\_\+.
+
+\mbox{\Hypertarget{classUserDB_a57f37612708497d90abac5391debe204}\label{classUserDB_a57f37612708497d90abac5391debe204}} 
+\index{UserDB@{UserDB}!getEmployees@{getEmployees}}
+\index{getEmployees@{getEmployees}!UserDB@{UserDB}}
+\doxysubsubsection{\texorpdfstring{getEmployees()}{getEmployees()}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{classEmployee}{Employee}}$\ast$, \mbox{\hyperlink{structEmployeeNifCompare}{Employee\+Nif\+Compare}}$>$ User\+DB\+::get\+Employees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 67 of file User\+DB.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classUserDB_a6dca465b93d900ab162ead15057c587e}{employees\_}}; \};}
+
+\end{DoxyCode}
+
+
+References employees\+\_\+.
+
+
+
+Referenced by Login\+::authenticate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUserDB_a57f37612708497d90abac5391debe204_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classUserDB_ab3629f15258b93ad3e4d3eb6333fb6b3}\label{classUserDB_ab3629f15258b93ad3e4d3eb6333fb6b3}} 
+\index{UserDB@{UserDB}!modUser@{modUser}}
+\index{modUser@{modUser}!UserDB@{UserDB}}
+\doxysubsubsection{\texorpdfstring{modUser()}{modUser()}}
+{\footnotesize\ttfamily void User\+DB\+::mod\+User (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classEmployee}{Employee}} $\ast$}]{employee }\end{DoxyParamCaption})}
+
+
+
+Modifies an existing employee in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the employee to be modified. \\
+\hline
+{\em employee} & Pointer to the new \mbox{\hyperlink{classEmployee}{Employee}} object with updated information. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file User\+DB.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                          \{}
+\DoxyCodeLine{26     std::cout << \textcolor{stringliteral}{"{}Modifying user..."{}} << std::endl;}
+\DoxyCodeLine{27     \textcolor{comment}{/*for (int i = 0; i < this-\/>num\_employees; i++)\{}}
+\DoxyCodeLine{28 \textcolor{comment}{        if (this-\/>employees[i].getId() == id)\{}}
+\DoxyCodeLine{29 \textcolor{comment}{            this-\/>employees[i] = employee;}}
+\DoxyCodeLine{30 \textcolor{comment}{        \}}}
+\DoxyCodeLine{31 \textcolor{comment}{    \}*/}}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUserDB_a1022195f22002b004df9e8e00cf7be71}\label{classUserDB_a1022195f22002b004df9e8e00cf7be71}} 
+\index{UserDB@{UserDB}!showAll@{showAll}}
+\index{showAll@{showAll}!UserDB@{UserDB}}
+\doxysubsubsection{\texorpdfstring{showAll()}{showAll()}}
+{\footnotesize\ttfamily void User\+DB\+::show\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays information about all employees in the database. 
+
+
+
+Definition at line 17 of file User\+DB.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17                \{}
+\DoxyCodeLine{18     std::cout << \textcolor{stringliteral}{"{}Showing all users..."{}} << std::endl;}
+\DoxyCodeLine{19     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& employee: \mbox{\hyperlink{classUserDB_a6dca465b93d900ab162ead15057c587e}{employees\_}})\{}
+\DoxyCodeLine{20         employee-\/>showinfo();}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+
+
+References employees\+\_\+.
+
+\mbox{\Hypertarget{classUserDB_a6740382ca144dc9e00eb346e47d8ac18}\label{classUserDB_a6740382ca144dc9e00eb346e47d8ac18}} 
+\index{UserDB@{UserDB}!showByPerm@{showByPerm}}
+\index{showByPerm@{showByPerm}!UserDB@{UserDB}}
+\doxysubsubsection{\texorpdfstring{showByPerm()}{showByPerm()}}
+{\footnotesize\ttfamily void User\+DB\+::show\+By\+Perm (\begin{DoxyParamCaption}\item[{int}]{permission }\end{DoxyParamCaption})}
+
+
+
+Displays information about employees with a specific permission level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em permission} & The permission level to filter employees by. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file User\+DB.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                \{}
+\DoxyCodeLine{36     std::cout << \textcolor{stringliteral}{"{}Showing users by permision..."{}} << std::endl;}
+\DoxyCodeLine{37     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& employee: \mbox{\hyperlink{classUserDB_a6dca465b93d900ab162ead15057c587e}{employees\_}})\{}
+\DoxyCodeLine{38         \textcolor{keywordflow}{if} (employee-\/>getPermission() == permision)\{}
+\DoxyCodeLine{39             employee-\/>showinfo();}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41     \}}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+
+
+References employees\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classUserDB_a6dca465b93d900ab162ead15057c587e}\label{classUserDB_a6dca465b93d900ab162ead15057c587e}} 
+\index{UserDB@{UserDB}!employees\_@{employees\_}}
+\index{employees\_@{employees\_}!UserDB@{UserDB}}
+\doxysubsubsection{\texorpdfstring{employees\_}{employees\_}}
+{\footnotesize\ttfamily std\+::set$<$\mbox{\hyperlink{classEmployee}{Employee}}$\ast$, \mbox{\hyperlink{structEmployeeNifCompare}{Employee\+Nif\+Compare}}$>$ User\+DB\+::employees\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Set of employees stored in the database. 
+
+Definition at line 36 of file User\+DB.\+h.
+
+
+
+Referenced by add\+User(), get\+Employees(), show\+All(), and show\+By\+Perm().
+
+\mbox{\Hypertarget{classUserDB_a8099dbb7d391717be5f9343b3130a144}\label{classUserDB_a8099dbb7d391717be5f9343b3130a144}} 
+\index{UserDB@{UserDB}!num\_employees\_@{num\_employees\_}}
+\index{num\_employees\_@{num\_employees\_}!UserDB@{UserDB}}
+\doxysubsubsection{\texorpdfstring{num\_employees\_}{num\_employees\_}}
+{\footnotesize\ttfamily int User\+DB\+::num\+\_\+employees\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Number of employees in the database. 
+
+Definition at line 37 of file User\+DB.\+h.
+
+
+
+Referenced by add\+User(), and User\+DB().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{UserDB_8h}{User\+DB.\+h}}\item 
+\mbox{\hyperlink{UserDB_8cpp}{User\+DB.\+cpp}}\end{DoxyCompactItemize}

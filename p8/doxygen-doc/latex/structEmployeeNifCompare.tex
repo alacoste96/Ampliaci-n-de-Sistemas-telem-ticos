@@ -1,0 +1,82 @@
+\hypertarget{structEmployeeNifCompare}{}\doxysection{Employee\+Nif\+Compare Struct Reference}
+\label{structEmployeeNifCompare}\index{EmployeeNifCompare@{EmployeeNifCompare}}
+
+
+For comparing Employees based on their NIF and ID.  
+
+
+
+
+{\ttfamily \#include $<$User\+DB.\+h$>$}
+
+
+
+Collaboration diagram for Employee\+Nif\+Compare\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{structEmployeeNifCompare__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structEmployeeNifCompare_a6072ace7d2d31d5b54955ef9c2765eeb}{operator()}} (const \mbox{\hyperlink{classEmployee}{Employee}} $\ast$left, const \mbox{\hyperlink{classEmployee}{Employee}} $\ast$right) const
+\begin{DoxyCompactList}\small\item\em Overloaded function call operator to compare two Employees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+For comparing Employees based on their NIF and ID. 
+
+Definition at line 16 of file User\+DB.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structEmployeeNifCompare_a6072ace7d2d31d5b54955ef9c2765eeb}\label{structEmployeeNifCompare_a6072ace7d2d31d5b54955ef9c2765eeb}} 
+\index{EmployeeNifCompare@{EmployeeNifCompare}!operator()@{operator()}}
+\index{operator()@{operator()}!EmployeeNifCompare@{EmployeeNifCompare}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Employee\+Nif\+Compare\+::operator() (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEmployee}{Employee}} $\ast$}]{left,  }\item[{const \mbox{\hyperlink{classEmployee}{Employee}} $\ast$}]{right }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloaded function call operator to compare two Employees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Pointer to the left \mbox{\hyperlink{classEmployee}{Employee}}. \\
+\hline
+{\em right} & Pointer to the right \mbox{\hyperlink{classEmployee}{Employee}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Nif and the Id of the left is diferent from the right one. 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file User\+DB.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                                                      \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{return} (left-\/>\mbox{\hyperlink{classEmployee_a2c0034d26290607a72221caedbfa45fe}{getNif}}() != right-\/>\mbox{\hyperlink{classEmployee_a2c0034d26290607a72221caedbfa45fe}{getNif}}()) \&\& (left-\/>\mbox{\hyperlink{classEmployee_a59e25c1c6eeaff55c13ac06ff1c581a2}{getId}}() != right-\/>\mbox{\hyperlink{classEmployee_a59e25c1c6eeaff55c13ac06ff1c581a2}{getId}}());}
+\DoxyCodeLine{25   \}}
+
+\end{DoxyCode}
+
+
+References Employee\+::get\+Id(), and Employee\+::get\+Nif().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{structEmployeeNifCompare_a6072ace7d2d31d5b54955ef9c2765eeb_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{UserDB_8h}{User\+DB.\+h}}\end{DoxyCompactItemize}

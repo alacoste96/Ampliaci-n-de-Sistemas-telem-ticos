@@ -1,0 +1,5 @@
+<map id="Alarm::callPolice" name="Alarm::callPolice">
+<area shape="rect" id="node1" title="Calls the police if an intrusion is detected." alt="" coords="424,5,555,32"/>
+<area shape="rect" id="node2" href="$classAlarm.html#a653b5130667d22d89c233f216b45438c" title="Displays information about the alarm like if it is turned on or off, and if an intrusion has been det..." alt="" coords="248,5,376,32"/>
+<area shape="rect" id="node3" href="$classDashBoard.html#a1d09931fb44fff099209394c4d1d8628" title="Displays the status of the alarm." alt="" coords="5,5,200,32"/>
+</map>

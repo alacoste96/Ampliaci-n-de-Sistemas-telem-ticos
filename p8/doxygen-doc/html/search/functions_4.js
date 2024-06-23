@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['genrand_234',['genRand',['../classSensor.html#a515f2323f860ba914807206685061ad5',1,'Sensor::genRand()'],['../classCamera.html#a36d0907bd98b395f19509b2ab8b2ed8d',1,'Camera::genRand()']]],
+  ['getasensor_235',['getAsensor',['../classSensorDB.html#ace45281a9e16900f77bd30fd31f81c95',1,'SensorDB']]],
+  ['getcurrent_236',['getCurrent',['../classSensor.html#ad7b9d45d7f65bf152e56a05998c5fc50',1,'Sensor']]],
+  ['getemployees_237',['getEmployees',['../classUserDB.html#a57f37612708497d90abac5391debe204',1,'UserDB']]],
+  ['getemploytype_238',['getEmployType',['../classEmployee.html#a2b7d7915179835d1b51b6a35cf981748',1,'Employee']]],
+  ['getid_239',['getId',['../classEmployee.html#a59e25c1c6eeaff55c13ac06ff1c581a2',1,'Employee::getId()'],['../classSensor.html#aa5ecdd87ed7cf5774affc20c3d2037a9',1,'Sensor::getId()']]],
+  ['getintrusion_240',['getIntrusion',['../classAlarm.html#a3db4e98c5ec6e9babe88ddfab090002c',1,'Alarm']]],
+  ['getlastday_241',['getLastDay',['../classSensor.html#ae46d0f89914270eeff47bb10df7ef834',1,'Sensor']]],
+  ['getlastweek_242',['getLastWeek',['../classSensor.html#ad94b29cffdecc3d435d69de66574f308',1,'Sensor']]],
+  ['getnextid_243',['getNextId',['../classSensorDB.html#add954cfc3518fe6944192c1c031fe53c',1,'SensorDB']]],
+  ['getnif_244',['getNif',['../classEmployee.html#a2c0034d26290607a72221caedbfa45fe',1,'Employee']]],
+  ['getnsensbytype_245',['getNsensByType',['../classSensorDB.html#abea0441eb3eba7c80f635890976f88da',1,'SensorDB']]],
+  ['getnsensors_246',['getNsensors',['../classSensor.html#a5b1418b7a5eb82717cb93c0963b4f384',1,'Sensor']]],
+  ['getnumsens_247',['getNumSens',['../classSensorDB.html#a2f2b687ce1528185425613f79addf18e',1,'SensorDB']]],
+  ['getonoff_248',['getOnOff',['../classAlarm.html#a40e8120c8477922664c48341d52d9621',1,'Alarm']]],
+  ['getoption_249',['getOption',['../classDashBoard.html#a3c6b8de4ae4136fa09973ff1d7384f55',1,'DashBoard']]],
+  ['getpasswd_250',['getPasswd',['../classLogin.html#a1f7ab4ea90f44bfde0fc7f5e432c0284',1,'Login']]],
+  ['getpermission_251',['getPermission',['../classEmployee.html#a60ee70b1e6a5084e480d2ef97dac8dd5',1,'Employee']]],
+  ['getsensbytype_252',['getSensByType',['../classSensorDB.html#aa3a7bc8c386cdd8aeec12ff4b0810ed3',1,'SensorDB']]],
+  ['getsensors_253',['getSensors',['../classSensorDB.html#a950fbdc2d6a1a800705f364588289032',1,'SensorDB']]],
+  ['gettimestamp_254',['getTimestamp',['../classEmployee.html#a78f548873a5095e47b522285dc0f2f04',1,'Employee']]],
+  ['gettype_255',['getType',['../classSensor.html#a22459a42730fd96a3148eae3ece4d028',1,'Sensor']]],
+  ['getuser_256',['getUser',['../classDashBoard.html#a7611869c69e51f10fe23db6eee8a31a1',1,'DashBoard::getUser()'],['../classLogin.html#a6b3cc0e67188b375fc1852d15e199ddc',1,'Login::getUser()']]]
+];

@@ -1,0 +1,698 @@
+\hypertarget{classDashBoard}{}\doxysection{Dash\+Board Class Reference}
+\label{classDashBoard}\index{DashBoard@{DashBoard}}
+
+
+Represents a dashboard for system management.  
+
+
+
+
+{\ttfamily \#include $<$Dash\+Board.\+h$>$}
+
+
+
+Collaboration diagram for Dash\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDashBoard_a06adc31ca8611b90cd63fba96dbc3d7a}{Dash\+Board}} (\mbox{\hyperlink{classEmployee}{Employee}} $\ast$user=nullptr, \mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$sensor\+DB=nullptr, \mbox{\hyperlink{classAlarm}{Alarm}} $\ast$alarm=nullptr, \mbox{\hyperlink{classUserDB}{User\+DB}} $\ast$user\+DB=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classDashBoard}{Dash\+Board}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDashBoard_aa2b99b3bbc078c1763e5450c54acca38}{$\sim$\+Dash\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classDashBoard}{Dash\+Board}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashBoard_a52141d1537657e5a6a874176bd5d01ab}{show\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the main menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashBoard_a110ee829819beafad009cd48071e2a65}{show\+Sensors\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the sensors menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashBoard_a1b72b3ab0212bca997e4755f9670441b}{show\+All\+Sensors}} (\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$sensor\+DB)
+\begin{DoxyCompactList}\small\item\em Displays information about all sensors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashBoard_af822fdb9c274cd77dba3c95714e5821b}{show\+By\+Type}} (\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$sensor\+DB)
+\begin{DoxyCompactList}\small\item\em Displays information about sensors of a specific type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDashBoard_abe8fd5cbc5df29e25bcbb32548aece1a}{add\+Sensor}} (\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$sensor\+DB)
+\begin{DoxyCompactList}\small\item\em Adds a new sensor to the database. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDashBoard_af81e9a8de62ae3f10880d076782905dd}{select\+Type\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Prompts the user to select a sensor type. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDashBoard_a3717ec3fe9e85a46a7da52185bff6832}{ask\+For\+Option}} (int max)
+\begin{DoxyCompactList}\small\item\em Prompts the user to select an option. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDashBoard_a3c6b8de4ae4136fa09973ff1d7384f55}{get\+Option}} ()
+\item 
+\mbox{\hyperlink{classEmployee}{Employee}} $\ast$ \mbox{\hyperlink{classDashBoard_a7611869c69e51f10fe23db6eee8a31a1}{get\+User}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEmployee}{Employee}} $\ast$ \mbox{\hyperlink{classDashBoard_a23b94f9bef6f424a41393e4e58508c18}{user\+\_\+}}
+\item 
+int \mbox{\hyperlink{classDashBoard_a7bd1c1319fda55dd097bdcefbc8221f2}{option\+\_\+}}
+\item 
+\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$ \mbox{\hyperlink{classDashBoard_a799dab5f8524ce5a92cb66276fe8d9e2}{sensor\+DB\+\_\+}}
+\item 
+\mbox{\hyperlink{classAlarm}{Alarm}} $\ast$ \mbox{\hyperlink{classDashBoard_a14b5be1e13ee965ac0b6fa9500803ccd}{alarm\+\_\+}}
+\item 
+\mbox{\hyperlink{classUserDB}{User\+DB}} $\ast$ \mbox{\hyperlink{classDashBoard_a0968a0182352b4083fc322a00843fe0d}{user\+DB\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a dashboard for system management. 
+
+This class represents a dashboard for system management, with functionalities for displaying menus and managing sensors. 
+
+Definition at line 22 of file Dash\+Board.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDashBoard_a06adc31ca8611b90cd63fba96dbc3d7a}\label{classDashBoard_a06adc31ca8611b90cd63fba96dbc3d7a}} 
+\index{DashBoard@{DashBoard}!DashBoard@{DashBoard}}
+\index{DashBoard@{DashBoard}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{DashBoard()}{DashBoard()}}
+{\footnotesize\ttfamily Dash\+Board\+::\+Dash\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEmployee}{Employee}} $\ast$}]{user = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$}]{sensor\+DB = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classAlarm}{Alarm}} $\ast$}]{alarm = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classUserDB}{User\+DB}} $\ast$}]{user\+DB = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classDashBoard}{Dash\+Board}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & Pointer to the logged-\/in user. \\
+\hline
+{\em sensor\+DB} & Pointer to the \mbox{\hyperlink{classSensorDB}{Sensor\+DB}} object. \\
+\hline
+{\em alarm} & Pointer to the \mbox{\hyperlink{classAlarm}{Alarm}} object. \\
+\hline
+{\em user\+DB} & Pointer to the \mbox{\hyperlink{classUserDB}{User\+DB}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                                                                      \{}
+\DoxyCodeLine{4     this-\/>\mbox{\hyperlink{classDashBoard_a23b94f9bef6f424a41393e4e58508c18}{user\_}} = user;}
+\DoxyCodeLine{5     this-\/>\mbox{\hyperlink{classDashBoard_a7bd1c1319fda55dd097bdcefbc8221f2}{option\_}} = 0;}
+\DoxyCodeLine{6     this-\/>\mbox{\hyperlink{classDashBoard_a799dab5f8524ce5a92cb66276fe8d9e2}{sensorDB\_}} = sensorDB;}
+\DoxyCodeLine{7     this-\/>\mbox{\hyperlink{classDashBoard_a14b5be1e13ee965ac0b6fa9500803ccd}{alarm\_}} = alarm;}
+\DoxyCodeLine{8     this-\/>\mbox{\hyperlink{classDashBoard_a0968a0182352b4083fc322a00843fe0d}{userDB\_}} = userDB;}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+
+
+References alarm\+\_\+, option\+\_\+, sensor\+DB\+\_\+, user\+\_\+, and user\+DB\+\_\+.
+
+\mbox{\Hypertarget{classDashBoard_aa2b99b3bbc078c1763e5450c54acca38}\label{classDashBoard_aa2b99b3bbc078c1763e5450c54acca38}} 
+\index{DashBoard@{DashBoard}!````~DashBoard@{$\sim$DashBoard}}
+\index{````~DashBoard@{$\sim$DashBoard}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{$\sim$DashBoard()}{~DashBoard()}}
+{\footnotesize\ttfamily Dash\+Board\+::$\sim$\+Dash\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classDashBoard}{Dash\+Board}} class. 
+
+
+
+Definition at line 11 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                       \{}
+\DoxyCodeLine{12     \textcolor{keyword}{delete} this-\/>\mbox{\hyperlink{classDashBoard_a799dab5f8524ce5a92cb66276fe8d9e2}{sensorDB\_}};}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+References sensor\+DB\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDashBoard_abe8fd5cbc5df29e25bcbb32548aece1a}\label{classDashBoard_abe8fd5cbc5df29e25bcbb32548aece1a}} 
+\index{DashBoard@{DashBoard}!addSensor@{addSensor}}
+\index{addSensor@{addSensor}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{addSensor()}{addSensor()}}
+{\footnotesize\ttfamily void Dash\+Board\+::add\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$}]{sensor\+DB }\end{DoxyParamCaption})}
+
+
+
+Adds a new sensor to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+DB} & Pointer to the \mbox{\hyperlink{classSensorDB}{Sensor\+DB}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122                                       \{}
+\DoxyCodeLine{123     \textcolor{keywordtype}{int} type, id;}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125     std::cout << \textcolor{stringliteral}{"{}Select type to add:\(\backslash\)n"{}};}
+\DoxyCodeLine{126     type = \mbox{\hyperlink{classDashBoard_af81e9a8de62ae3f10880d076782905dd}{DashBoard::selectTypeSensor}}();}
+\DoxyCodeLine{127     \textcolor{keywordtype}{id} = sensordb-\/>getNextId();}
+\DoxyCodeLine{128     sensordb-\/>addSensor(type, \textcolor{keywordtype}{id});}
+\DoxyCodeLine{129     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nSensor added."{}} << std::endl;}
+\DoxyCodeLine{130 \}}
+
+\end{DoxyCode}
+
+
+References Sensor\+DB\+::add\+Sensor(), Sensor\+DB\+::get\+Next\+Id(), and select\+Type\+Sensor().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard_abe8fd5cbc5df29e25bcbb32548aece1a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classDashBoard_abe8fd5cbc5df29e25bcbb32548aece1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDashBoard_a3717ec3fe9e85a46a7da52185bff6832}\label{classDashBoard_a3717ec3fe9e85a46a7da52185bff6832}} 
+\index{DashBoard@{DashBoard}!askForOption@{askForOption}}
+\index{askForOption@{askForOption}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{askForOption()}{askForOption()}}
+{\footnotesize\ttfamily int Dash\+Board\+::ask\+For\+Option (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Prompts the user to select an option. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Maximum allowed option(between 1 and max). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Selected option. 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                \{}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} option;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     std::cin >> option;}
+\DoxyCodeLine{20     \textcolor{keywordflow}{if} (option < 1 || option > max)\{}
+\DoxyCodeLine{21         \textcolor{keywordflow}{if} (std::cin.fail()) \{}
+\DoxyCodeLine{22             \textcolor{comment}{// Limpiamos el estado de error de std::cin}}
+\DoxyCodeLine{23             std::cin.clear();}
+\DoxyCodeLine{24             \textcolor{comment}{// Descartamos cualquier entrada incorrecta en el búfer}}
+\DoxyCodeLine{25             std::cin.ignore(std::numeric\_limits<std::streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{26         \}}
+\DoxyCodeLine{27         \textcolor{keywordflow}{throw} \mbox{\hyperlink{classValueError}{ValueError}}();}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29     std::cout << std::endl;}
+\DoxyCodeLine{30     std::cout << \textcolor{stringliteral}{"{}Selected option: "{}} << option << std::endl << std::endl;}
+\DoxyCodeLine{31     \textcolor{keywordflow}{return} option;}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+
+
+Referenced by select\+Type\+Sensor(), show\+Main\+Menu(), and show\+Sensors\+Menu().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard_a3717ec3fe9e85a46a7da52185bff6832_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDashBoard_a3c6b8de4ae4136fa09973ff1d7384f55}\label{classDashBoard_a3c6b8de4ae4136fa09973ff1d7384f55}} 
+\index{DashBoard@{DashBoard}!getOption@{getOption}}
+\index{getOption@{getOption}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}}
+{\footnotesize\ttfamily int Dash\+Board\+::get\+Option (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 147 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147                      \{}
+\DoxyCodeLine{148     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classDashBoard_a7bd1c1319fda55dd097bdcefbc8221f2}{option\_}};}
+\DoxyCodeLine{149 \}  }
+
+\end{DoxyCode}
+
+
+References option\+\_\+.
+
+
+
+Referenced by main().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{classDashBoard_a3c6b8de4ae4136fa09973ff1d7384f55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDashBoard_a7611869c69e51f10fe23db6eee8a31a1}\label{classDashBoard_a7611869c69e51f10fe23db6eee8a31a1}} 
+\index{DashBoard@{DashBoard}!getUser@{getUser}}
+\index{getUser@{getUser}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEmployee}{Employee}} $\ast$ Dash\+Board\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 152 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{152                    \{}
+\DoxyCodeLine{153     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classDashBoard_a23b94f9bef6f424a41393e4e58508c18}{user\_}};}
+\DoxyCodeLine{154 \}}
+
+\end{DoxyCode}
+
+
+References user\+\_\+.
+
+\mbox{\Hypertarget{classDashBoard_af81e9a8de62ae3f10880d076782905dd}\label{classDashBoard_af81e9a8de62ae3f10880d076782905dd}} 
+\index{DashBoard@{DashBoard}!selectTypeSensor@{selectTypeSensor}}
+\index{selectTypeSensor@{selectTypeSensor}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{selectTypeSensor()}{selectTypeSensor()}}
+{\footnotesize\ttfamily int Dash\+Board\+::select\+Type\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prompts the user to select a sensor type. 
+
+\begin{DoxyReturn}{Returns}
+Selected sensor type. 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98                            \{}
+\DoxyCodeLine{99     \textcolor{keywordtype}{bool} numvalid = \textcolor{keyword}{false};}
+\DoxyCodeLine{100     \textcolor{keywordtype}{int} type;}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     \textcolor{keywordflow}{while}(!numvalid)\{}
+\DoxyCodeLine{103         std::cout << \textcolor{stringliteral}{"{}Types:\(\backslash\)n"{}};}
+\DoxyCodeLine{104         std::cout << \textcolor{stringliteral}{"{}1. Temperature.\(\backslash\)n"{}};}
+\DoxyCodeLine{105         std::cout << \textcolor{stringliteral}{"{}2. Humidity.\(\backslash\)n"{}};}
+\DoxyCodeLine{106         std::cout << \textcolor{stringliteral}{"{}3. Light quality.\(\backslash\)n"{}};}
+\DoxyCodeLine{107         std::cout << \textcolor{stringliteral}{"{}4. Air Quality.\(\backslash\)n"{}};}
+\DoxyCodeLine{108         std::cout << \textcolor{stringliteral}{"{}5. Camera RGB.\(\backslash\)n"{}};}
+\DoxyCodeLine{109         std::cout << \textcolor{stringliteral}{"{}6. Camera Termic.\(\backslash\)n"{}};}
+\DoxyCodeLine{110         std::cout << \textcolor{stringliteral}{"{}Your option: "{}};}
+\DoxyCodeLine{111         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{112             type = \mbox{\hyperlink{classDashBoard_a3717ec3fe9e85a46a7da52185bff6832}{DashBoard::askForOption}}(6);}
+\DoxyCodeLine{113             numvalid = \textcolor{keyword}{true};}
+\DoxyCodeLine{114         \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{classValueError}{ValueError}} \&e)\{}
+\DoxyCodeLine{115             std::cerr << \textcolor{stringliteral}{"{}\(\backslash\)nInvalid number, try again(1 -\/ 6)\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117     \}}
+\DoxyCodeLine{118     \textcolor{keywordflow}{return} type;}
+\DoxyCodeLine{119 \}}
+
+\end{DoxyCode}
+
+
+References ask\+For\+Option().
+
+
+
+Referenced by add\+Sensor(), and show\+By\+Type().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard_af81e9a8de62ae3f10880d076782905dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard_af81e9a8de62ae3f10880d076782905dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDashBoard_a1b72b3ab0212bca997e4755f9670441b}\label{classDashBoard_a1b72b3ab0212bca997e4755f9670441b}} 
+\index{DashBoard@{DashBoard}!showAllSensors@{showAllSensors}}
+\index{showAllSensors@{showAllSensors}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{showAllSensors()}{showAllSensors()}}
+{\footnotesize\ttfamily void Dash\+Board\+::show\+All\+Sensors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$}]{sensor\+DB }\end{DoxyParamCaption})}
+
+
+
+Displays information about all sensors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+DB} & Pointer to the \mbox{\hyperlink{classSensorDB}{Sensor\+DB}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                            \{}
+\DoxyCodeLine{85     \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87     \textcolor{keywordflow}{for}(i = 0; i < (int)sensorDB-\/>\mbox{\hyperlink{classSensorDB_a950fbdc2d6a1a800705f364588289032}{getSensors}}().size(); i++)\{}
+\DoxyCodeLine{88         \textcolor{keywordflow}{if} (sensorDB-\/>\mbox{\hyperlink{classSensorDB_a950fbdc2d6a1a800705f364588289032}{getSensors}}()[i]-\/>getType() < \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a654201b001c75a0d4101473f062f7e2c}{TYPE\_RGB}})\{}
+\DoxyCodeLine{89             sensorDB-\/>\mbox{\hyperlink{classSensorDB_a950fbdc2d6a1a800705f364588289032}{getSensors}}()[i]-\/>scan(0.0, 100.0);}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nSensors: "{}} << std::endl;}
+\DoxyCodeLine{93     sensorDB-\/>\mbox{\hyperlink{classSensorDB_ae4c4e112faf9f3ebb178e99c2a2e8717}{showAll}}();}
+\DoxyCodeLine{94     std::cout << std::endl;}
+\DoxyCodeLine{95 \}}
+
+\end{DoxyCode}
+
+
+References Sensor\+DB\+::get\+Sensors(), Sensor\+DB\+::show\+All(), and TYPE\+\_\+\+RGB.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard_a1b72b3ab0212bca997e4755f9670441b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classDashBoard_a1b72b3ab0212bca997e4755f9670441b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDashBoard_af822fdb9c274cd77dba3c95714e5821b}\label{classDashBoard_af822fdb9c274cd77dba3c95714e5821b}} 
+\index{DashBoard@{DashBoard}!showByType@{showByType}}
+\index{showByType@{showByType}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{showByType()}{showByType()}}
+{\footnotesize\ttfamily void Dash\+Board\+::show\+By\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensorDB}{Sensor\+DB}} $\ast$}]{sensor\+DB }\end{DoxyParamCaption})}
+
+
+
+Displays information about sensors of a specific type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+DB} & Pointer to the \mbox{\hyperlink{classSensorDB}{Sensor\+DB}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 133 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133                                        \{}
+\DoxyCodeLine{134     \textcolor{keywordtype}{int} type, i;}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136     type = \mbox{\hyperlink{classDashBoard_af81e9a8de62ae3f10880d076782905dd}{DashBoard::selectTypeSensor}}();}
+\DoxyCodeLine{137     \textcolor{keywordflow}{for}(i = 0; i < (int)sensorDB-\/>\mbox{\hyperlink{classSensorDB_a950fbdc2d6a1a800705f364588289032}{getSensors}}().size(); i++)\{}
+\DoxyCodeLine{138         \textcolor{keywordflow}{if} (sensorDB-\/>\mbox{\hyperlink{classSensorDB_a950fbdc2d6a1a800705f364588289032}{getSensors}}()[i]-\/>getType() == type)\{}
+\DoxyCodeLine{139             sensorDB-\/>\mbox{\hyperlink{classSensorDB_a950fbdc2d6a1a800705f364588289032}{getSensors}}()[i]-\/>scan(0.0, 100.0);}
+\DoxyCodeLine{140         \}}
+\DoxyCodeLine{141     \}}
+\DoxyCodeLine{142     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nSensors of type "{}} << type << \textcolor{stringliteral}{"{}: "{}} << std::endl;}
+\DoxyCodeLine{143     sensorDB-\/>\mbox{\hyperlink{classSensorDB_a7375a8cc9c19a8291add51e62abe1b6a}{showByType}}(type);}
+\DoxyCodeLine{144     std::cout << std::endl;}
+\DoxyCodeLine{145 \}}
+
+\end{DoxyCode}
+
+
+References Sensor\+DB\+::get\+Sensors(), select\+Type\+Sensor(), and Sensor\+DB\+::show\+By\+Type().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard_af822fdb9c274cd77dba3c95714e5821b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classDashBoard_af822fdb9c274cd77dba3c95714e5821b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDashBoard_a52141d1537657e5a6a874176bd5d01ab}\label{classDashBoard_a52141d1537657e5a6a874176bd5d01ab}} 
+\index{DashBoard@{DashBoard}!showMainMenu@{showMainMenu}}
+\index{showMainMenu@{showMainMenu}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{showMainMenu()}{showMainMenu()}}
+{\footnotesize\ttfamily void Dash\+Board\+::show\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the main menu. 
+
+
+
+Definition at line 35 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                        \{}
+\DoxyCodeLine{36     \textcolor{keywordtype}{bool} numvalid = \textcolor{keyword}{false};}
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} max = 4;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keywordflow}{while}(!numvalid)\{}
+\DoxyCodeLine{40         std::cout << \textcolor{stringliteral}{"{}What would you like to do?"{}} << std::endl;}
+\DoxyCodeLine{41         std::cout << \textcolor{stringliteral}{"{}1. Manage Sensors."{}} << std::endl;}
+\DoxyCodeLine{42         std::cout << \textcolor{stringliteral}{"{}2. Change my password."{}} << std::endl;}
+\DoxyCodeLine{43         std::cout << \textcolor{stringliteral}{"{}3. Change user."{}} << std::endl;}
+\DoxyCodeLine{44         std::cout << \textcolor{stringliteral}{"{}4. Exit."{}} << std::endl;}
+\DoxyCodeLine{45         \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classDashBoard_a23b94f9bef6f424a41393e4e58508c18}{user\_}}-\/>\mbox{\hyperlink{classEmployee_a60ee70b1e6a5084e480d2ef97dac8dd5}{getPermission}}() >= 2)\{}
+\DoxyCodeLine{46             std::cout << \textcolor{stringliteral}{"{}5. Manage Alarm."{}} << std::endl;}
+\DoxyCodeLine{47             max = 5;}
+\DoxyCodeLine{48         \}}
+\DoxyCodeLine{49         \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classDashBoard_a23b94f9bef6f424a41393e4e58508c18}{user\_}}-\/>\mbox{\hyperlink{classEmployee_a60ee70b1e6a5084e480d2ef97dac8dd5}{getPermission}}() >= 3)\{}
+\DoxyCodeLine{50             std::cout << \textcolor{stringliteral}{"{}6. Manage Users."{}} << std::endl;}
+\DoxyCodeLine{51             max = 6;}
+\DoxyCodeLine{52         \}}
+\DoxyCodeLine{53         std::cout << \textcolor{stringliteral}{"{}Your option: "{}};}
+\DoxyCodeLine{54         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{55             this-\/>\mbox{\hyperlink{classDashBoard_a7bd1c1319fda55dd097bdcefbc8221f2}{option\_}} = \mbox{\hyperlink{classDashBoard_a3717ec3fe9e85a46a7da52185bff6832}{DashBoard::askForOption}}(max);}
+\DoxyCodeLine{56             numvalid = \textcolor{keyword}{true};}
+\DoxyCodeLine{57         \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{classValueError}{ValueError}} \&e)\{}
+\DoxyCodeLine{58             std::cerr << \textcolor{stringliteral}{"{}\(\backslash\)nInvalid number, try again(1 -\/ "{}} << max << \textcolor{stringliteral}{"{})\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{60     \}}
+\DoxyCodeLine{61 \}}
+
+\end{DoxyCode}
+
+
+References ask\+For\+Option(), Employee\+::get\+Permission(), option\+\_\+, and user\+\_\+.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard_a52141d1537657e5a6a874176bd5d01ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classDashBoard_a52141d1537657e5a6a874176bd5d01ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDashBoard_a110ee829819beafad009cd48071e2a65}\label{classDashBoard_a110ee829819beafad009cd48071e2a65}} 
+\index{DashBoard@{DashBoard}!showSensorsMenu@{showSensorsMenu}}
+\index{showSensorsMenu@{showSensorsMenu}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{showSensorsMenu()}{showSensorsMenu()}}
+{\footnotesize\ttfamily void Dash\+Board\+::show\+Sensors\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the sensors menu. 
+
+
+
+Definition at line 64 of file Dash\+Board.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                           \{}
+\DoxyCodeLine{65     \textcolor{keywordtype}{bool} numvalid = \textcolor{keyword}{false};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \textcolor{keywordflow}{while}(!numvalid)\{}
+\DoxyCodeLine{68         std::cout << \textcolor{stringliteral}{"{}Manage Sensors."{}} << std::endl;}
+\DoxyCodeLine{69         std::cout << \textcolor{stringliteral}{"{}1. Add a sensor."{}} << std::endl;}
+\DoxyCodeLine{70         std::cout << \textcolor{stringliteral}{"{}2. Show all sensors."{}} << std::endl;}
+\DoxyCodeLine{71         std::cout << \textcolor{stringliteral}{"{}3. Show sensors by type."{}} << std::endl;}
+\DoxyCodeLine{72         std::cout << \textcolor{stringliteral}{"{}4. Back."{}} << std::endl;}
+\DoxyCodeLine{73         std::cout << \textcolor{stringliteral}{"{}Your option: "{}};}
+\DoxyCodeLine{74         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{75             this-\/>\mbox{\hyperlink{classDashBoard_a7bd1c1319fda55dd097bdcefbc8221f2}{option\_}} = \mbox{\hyperlink{classDashBoard_a3717ec3fe9e85a46a7da52185bff6832}{DashBoard::askForOption}}(4);}
+\DoxyCodeLine{76             numvalid = \textcolor{keyword}{true};}
+\DoxyCodeLine{77         \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{classValueError}{ValueError}} \&e)\{}
+\DoxyCodeLine{78             std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nInvalid number, try again(1 -\/ 4)\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80     \}}
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}
+
+
+References ask\+For\+Option(), and option\+\_\+.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashBoard_a110ee829819beafad009cd48071e2a65_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classDashBoard_a110ee829819beafad009cd48071e2a65_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDashBoard_a14b5be1e13ee965ac0b6fa9500803ccd}\label{classDashBoard_a14b5be1e13ee965ac0b6fa9500803ccd}} 
+\index{DashBoard@{DashBoard}!alarm\_@{alarm\_}}
+\index{alarm\_@{alarm\_}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{alarm\_}{alarm\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlarm}{Alarm}}$\ast$ Dash\+Board\+::alarm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the \mbox{\hyperlink{classAlarm}{Alarm}} object. 
+
+Definition at line 27 of file Dash\+Board.\+h.
+
+
+
+Referenced by Dash\+Board().
+
+\mbox{\Hypertarget{classDashBoard_a7bd1c1319fda55dd097bdcefbc8221f2}\label{classDashBoard_a7bd1c1319fda55dd097bdcefbc8221f2}} 
+\index{DashBoard@{DashBoard}!option\_@{option\_}}
+\index{option\_@{option\_}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{option\_}{option\_}}
+{\footnotesize\ttfamily int Dash\+Board\+::option\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Selected option in the menu. 
+
+Definition at line 25 of file Dash\+Board.\+h.
+
+
+
+Referenced by Dash\+Board(), get\+Option(), show\+Main\+Menu(), and show\+Sensors\+Menu().
+
+\mbox{\Hypertarget{classDashBoard_a799dab5f8524ce5a92cb66276fe8d9e2}\label{classDashBoard_a799dab5f8524ce5a92cb66276fe8d9e2}} 
+\index{DashBoard@{DashBoard}!sensorDB\_@{sensorDB\_}}
+\index{sensorDB\_@{sensorDB\_}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{sensorDB\_}{sensorDB\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSensorDB}{Sensor\+DB}}$\ast$ Dash\+Board\+::sensor\+DB\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the \mbox{\hyperlink{classSensorDB}{Sensor\+DB}} object. 
+
+Definition at line 26 of file Dash\+Board.\+h.
+
+
+
+Referenced by Dash\+Board(), and $\sim$\+Dash\+Board().
+
+\mbox{\Hypertarget{classDashBoard_a23b94f9bef6f424a41393e4e58508c18}\label{classDashBoard_a23b94f9bef6f424a41393e4e58508c18}} 
+\index{DashBoard@{DashBoard}!user\_@{user\_}}
+\index{user\_@{user\_}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{user\_}{user\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEmployee}{Employee}}$\ast$ Dash\+Board\+::user\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the logged-\/in user. 
+
+Definition at line 24 of file Dash\+Board.\+h.
+
+
+
+Referenced by Dash\+Board(), get\+User(), and show\+Main\+Menu().
+
+\mbox{\Hypertarget{classDashBoard_a0968a0182352b4083fc322a00843fe0d}\label{classDashBoard_a0968a0182352b4083fc322a00843fe0d}} 
+\index{DashBoard@{DashBoard}!userDB\_@{userDB\_}}
+\index{userDB\_@{userDB\_}!DashBoard@{DashBoard}}
+\doxysubsubsection{\texorpdfstring{userDB\_}{userDB\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUserDB}{User\+DB}}$\ast$ Dash\+Board\+::user\+DB\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the \mbox{\hyperlink{classUserDB}{User\+DB}} object. 
+
+Definition at line 28 of file Dash\+Board.\+h.
+
+
+
+Referenced by Dash\+Board().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DashBoard_8h}{Dash\+Board.\+h}}\item 
+\mbox{\hyperlink{DashBoard_8cpp}{Dash\+Board.\+cpp}}\end{DoxyCompactItemize}

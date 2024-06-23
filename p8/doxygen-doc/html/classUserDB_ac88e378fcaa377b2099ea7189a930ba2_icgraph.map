@@ -1,0 +1,4 @@
+<map id="UserDB::nifExists" name="UserDB::nifExists">
+<area shape="rect" id="node1" title="Checks if an employee with the given NIF exists in the database." alt="" coords="208,5,343,32"/>
+<area shape="rect" id="node2" href="$classDashBoard.html#a2e6d920fa5b920cc793b85ef796fe6a3" title="Adds a new user to the database." alt="" coords="5,5,160,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="DashBoard::showAllSensors" name="DashBoard::showAllSensors">
+<area shape="rect" id="node1" title="Displays information about all sensors." alt="" coords="5,31,208,57"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#a950fbdc2d6a1a800705f364588289032" title=" " alt="" coords="256,5,421,32"/>
+<area shape="rect" id="node3" href="$classSensorDB.html#ae4c4e112faf9f3ebb178e99c2a2e8717" title="Displays information about all sensors in the database." alt="" coords="267,56,411,83"/>
+<area shape="rect" id="node4" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="469,56,645,83"/>
+</map>

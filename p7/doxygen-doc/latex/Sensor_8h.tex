@@ -1,0 +1,130 @@
+\hypertarget{Sensor_8h}{}\doxysection{Sensor.\+h File Reference}
+\label{Sensor_8h}\index{Sensor.h@{Sensor.h}}
+
+
+This file contains the declaration of the \mbox{\hyperlink{classSensor}{Sensor}} class.  
+
+
+{\ttfamily \#include \char`\"{}iostream\char`\"{}}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+Include dependency graph for Sensor.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{Sensor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Sensor_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSensor}{Sensor}}
+\begin{DoxyCompactList}\small\item\em Represents a generic sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35}{Sensor\+Types}} \{ \newline
+\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}{SAMPLES\+\_\+\+DAY}} = 5
+, \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}{SAMPLES\+\_\+\+WEEK}} = 8
+, \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35aec8bbda4c558fae85267a7aecfbdd163}{TYPE\+\_\+\+TEMP}} = 1
+, \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35ab6590f4c2341ffec9799f731b872925b}{TYPE\+\_\+\+HUM}} = 2
+, \newline
+\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35af6f5068c1bd60defd30cfc81793aa38e}{TYPE\+\_\+\+LIGHT}} = 3
+, \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a97dfee7edcb2ac01d4ec14f5a85fa36c}{TYPE\+\_\+\+AIR}} = 4
+, \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a654201b001c75a0d4101473f062f7e2c}{TYPE\+\_\+\+RGB}} = 5
+, \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a6f5b146742d5df4636bf11a19dbfba8e}{TYPE\+\_\+\+TERMIC}} = 6
+, \newline
+\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35acba7b4938fe4b71786674ec53684cc14}{TYPE\+\_\+\+MAG}} = 7
+, \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a232035a5dddc41688ebfc2772e829442}{TYPE\+\_\+\+CAM}} = 8
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates different types of sensors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of the \mbox{\hyperlink{classSensor}{Sensor}} class. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35}} 
+\index{Sensor.h@{Sensor.h}!SensorTypes@{SensorTypes}}
+\index{SensorTypes@{SensorTypes}!Sensor.h@{Sensor.h}}
+\doxysubsubsection{\texorpdfstring{SensorTypes}{SensorTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35}{Sensor\+Types}}}
+
+
+
+Enumerates different types of sensors. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SAMPLES\_DAY@{SAMPLES\_DAY}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!SAMPLES\_DAY@{SAMPLES\_DAY}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}} 
+SAMPLES\+\_\+\+DAY&Number of samples per day. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SAMPLES\_WEEK@{SAMPLES\_WEEK}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!SAMPLES\_WEEK@{SAMPLES\_WEEK}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}} 
+SAMPLES\+\_\+\+WEEK&Number of samples per week. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_TEMP@{TYPE\_TEMP}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!TYPE\_TEMP@{TYPE\_TEMP}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35aec8bbda4c558fae85267a7aecfbdd163}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35aec8bbda4c558fae85267a7aecfbdd163}} 
+TYPE\+\_\+\+TEMP&Temperature sensor type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_HUM@{TYPE\_HUM}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!TYPE\_HUM@{TYPE\_HUM}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35ab6590f4c2341ffec9799f731b872925b}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35ab6590f4c2341ffec9799f731b872925b}} 
+TYPE\+\_\+\+HUM&\mbox{\hyperlink{classHumidity}{Humidity}} sensor type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_LIGHT@{TYPE\_LIGHT}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!TYPE\_LIGHT@{TYPE\_LIGHT}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35af6f5068c1bd60defd30cfc81793aa38e}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35af6f5068c1bd60defd30cfc81793aa38e}} 
+TYPE\+\_\+\+LIGHT&Light sensor type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_AIR@{TYPE\_AIR}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!TYPE\_AIR@{TYPE\_AIR}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a97dfee7edcb2ac01d4ec14f5a85fa36c}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a97dfee7edcb2ac01d4ec14f5a85fa36c}} 
+TYPE\+\_\+\+AIR&Air quality sensor type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_RGB@{TYPE\_RGB}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!TYPE\_RGB@{TYPE\_RGB}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a654201b001c75a0d4101473f062f7e2c}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a654201b001c75a0d4101473f062f7e2c}} 
+TYPE\+\_\+\+RGB&RGB sensor type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_TERMIC@{TYPE\_TERMIC}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!TYPE\_TERMIC@{TYPE\_TERMIC}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a6f5b146742d5df4636bf11a19dbfba8e}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a6f5b146742d5df4636bf11a19dbfba8e}} 
+TYPE\+\_\+\+TERMIC&\mbox{\hyperlink{classTermic}{Termic}} sensor type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_MAG@{TYPE\_MAG}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!TYPE\_MAG@{TYPE\_MAG}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35acba7b4938fe4b71786674ec53684cc14}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35acba7b4938fe4b71786674ec53684cc14}} 
+TYPE\+\_\+\+MAG&\mbox{\hyperlink{classMagnetic}{Magnetic}} sensor type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_CAM@{TYPE\_CAM}!Sensor.h@{Sensor.h}}\index{Sensor.h@{Sensor.h}!TYPE\_CAM@{TYPE\_CAM}}}\mbox{\Hypertarget{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a232035a5dddc41688ebfc2772e829442}\label{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a232035a5dddc41688ebfc2772e829442}} 
+TYPE\+\_\+\+CAM&\mbox{\hyperlink{classCamera}{Camera}} sensor type. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 18 of file Sensor.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                  \{}
+\DoxyCodeLine{19     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}{SAMPLES\_DAY}} = 5, }
+\DoxyCodeLine{20     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}{SAMPLES\_WEEK}} = 8, }
+\DoxyCodeLine{21     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35aec8bbda4c558fae85267a7aecfbdd163}{TYPE\_TEMP}} = 1, }
+\DoxyCodeLine{22     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35ab6590f4c2341ffec9799f731b872925b}{TYPE\_HUM}} = 2, }
+\DoxyCodeLine{23     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35af6f5068c1bd60defd30cfc81793aa38e}{TYPE\_LIGHT}} = 3, }
+\DoxyCodeLine{24     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a97dfee7edcb2ac01d4ec14f5a85fa36c}{TYPE\_AIR}} = 4, }
+\DoxyCodeLine{25     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a654201b001c75a0d4101473f062f7e2c}{TYPE\_RGB}} = 5, }
+\DoxyCodeLine{26     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a6f5b146742d5df4636bf11a19dbfba8e}{TYPE\_TERMIC}} = 6, }
+\DoxyCodeLine{27     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35acba7b4938fe4b71786674ec53684cc14}{TYPE\_MAG}} = 7, }
+\DoxyCodeLine{28     \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a232035a5dddc41688ebfc2772e829442}{TYPE\_CAM}} = 8, }
+\DoxyCodeLine{29 \};}
+
+\end{DoxyCode}

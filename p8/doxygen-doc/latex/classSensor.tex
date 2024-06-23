@@ -1,0 +1,657 @@
+\hypertarget{classSensor}{}\doxysection{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+
+
+Represents a generic sensor.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+
+
+Inheritance diagram for Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classSensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSensor_a5f17a003c65b0579af226e0a38326f50}{Sensor}} (int type=0, int id=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classSensor}{Sensor}} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}{$\sim$\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classSensor}{Sensor}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSensor_a172026601607cac9b7c34e22915f1efc}{show\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Displays information about the sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSensor_ac004ce3a3fe0aff7c053195ea295c5c8}{scan}} (double min, double max)
+\begin{DoxyCompactList}\small\item\em Scans the sensor and updates its current value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSensor_a515f2323f860ba914807206685061ad5}{gen\+Rand}} (double min, double max)
+\begin{DoxyCompactList}\small\item\em Generates a random value within the specified range. It gets current date in microseconds as seed for the random number generator. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSensor_a22459a42730fd96a3148eae3ece4d028}{get\+Type}} ()
+\item 
+int \mbox{\hyperlink{classSensor_aa5ecdd87ed7cf5774affc20c3d2037a9}{get\+Id}} ()
+\item 
+int \mbox{\hyperlink{classSensor_a5b1418b7a5eb82717cb93c0963b4f384}{get\+Nsensors}} ()
+\item 
+void \mbox{\hyperlink{classSensor_acb8e7bb4a27edaf568e367a3861a75b5}{set\+Type}} (int type)
+\item 
+void \mbox{\hyperlink{classSensor_aa3b5796e7400b06b9e44c4cefe5c5517}{set\+Id}} (int id)
+\item 
+void \mbox{\hyperlink{classSensor_ad8a4c3aef60d90ade4b20bab1dcc3723}{set\+Current}} (double $\ast$current)
+\item 
+void \mbox{\hyperlink{classSensor_a12c9cac5e7749c2edf9f9feeb093b962}{set\+Last\+Day}} (double $\ast$last\+Day)
+\item 
+void \mbox{\hyperlink{classSensor_af74b78f97b805089eb266c573af0afb7}{set\+Last\+Week}} (double $\ast$last\+Week)
+\item 
+double $\ast$ \mbox{\hyperlink{classSensor_ad7b9d45d7f65bf152e56a05998c5fc50}{get\+Current}} ()
+\item 
+double $\ast$ \mbox{\hyperlink{classSensor_ae46d0f89914270eeff47bb10df7ef834}{get\+Last\+Day}} ()
+\item 
+double $\ast$ \mbox{\hyperlink{classSensor_ad94b29cffdecc3d435d69de66574f308}{get\+Last\+Week}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\+\_\+}}
+\item 
+int \mbox{\hyperlink{classSensor_a850d32639622b7fa1f2bb8b15a96609b}{id\+\_\+}}
+\item 
+double $\ast$ \mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\+\_\+}}
+\item 
+double $\ast$ \mbox{\hyperlink{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}{last\+Day\+\_\+}}
+\item 
+double $\ast$ \mbox{\hyperlink{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}{last\+Week\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classSensor_a426c71e0196c5925ef46ac9df754720f}{nsensors\+\_\+}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a generic sensor. 
+
+This class represents a generic sensor with functionality for scanning, calculating mean values, generating random values, and managing sensor information. 
+
+Definition at line 38 of file Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSensor_a5f17a003c65b0579af226e0a38326f50}\label{classSensor_a5f17a003c65b0579af226e0a38326f50}} 
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}}
+{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{int}]{type = {\ttfamily 0},  }\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classSensor}{Sensor}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of the sensor. \\
+\hline
+{\em id} & Unique identifier of the sensor. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 5 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                                \{}
+\DoxyCodeLine{6   this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} = type;}
+\DoxyCodeLine{7   this-\/>\mbox{\hyperlink{classSensor_a850d32639622b7fa1f2bb8b15a96609b}{id\_}} = id;}
+\DoxyCodeLine{8   \mbox{\hyperlink{classSensor_a426c71e0196c5925ef46ac9df754720f}{nsensors\_}}++;}
+\DoxyCodeLine{9   this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}} = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[1];}
+\DoxyCodeLine{10   this-\/>\mbox{\hyperlink{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}{lastDay\_}} = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}{SAMPLES\_DAY}}];}
+\DoxyCodeLine{11   this-\/>\mbox{\hyperlink{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}{lastWeek\_}} = \textcolor{keyword}{new} \textcolor{keywordtype}{double}[\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}{SAMPLES\_WEEK}}];}
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+
+
+References current\+\_\+, id\+\_\+, last\+Day\+\_\+, last\+Week\+\_\+, nsensors\+\_\+, SAMPLES\+\_\+\+DAY, SAMPLES\+\_\+\+WEEK, and type\+\_\+.
+
+\mbox{\Hypertarget{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}\label{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}} 
+\index{Sensor@{Sensor}!````~Sensor@{$\sim$Sensor}}
+\index{````~Sensor@{$\sim$Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sensor()}{~Sensor()}}
+{\footnotesize\ttfamily Sensor\+::$\sim$\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classSensor}{Sensor}} class. 
+
+
+
+Definition at line 19 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                 \{}
+\DoxyCodeLine{20   \textcolor{keyword}{delete}[] this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}};}
+\DoxyCodeLine{21   \textcolor{keyword}{delete}[] this-\/>\mbox{\hyperlink{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}{lastDay\_}};}
+\DoxyCodeLine{22   \textcolor{keyword}{delete}[] this-\/>\mbox{\hyperlink{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}{lastWeek\_}};}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+
+
+References current\+\_\+, last\+Day\+\_\+, and last\+Week\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSensor_a515f2323f860ba914807206685061ad5}\label{classSensor_a515f2323f860ba914807206685061ad5}} 
+\index{Sensor@{Sensor}!genRand@{genRand}}
+\index{genRand@{genRand}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{genRand()}{genRand()}}
+{\footnotesize\ttfamily double Sensor\+::gen\+Rand (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})}
+
+
+
+Generates a random value within the specified range. It gets current date in microseconds as seed for the random number generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimum value for the random value. \\
+\hline
+{\em max} & Maximum value for the random value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Random value within the specified range. 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                                      \{}
+\DoxyCodeLine{76   \textcolor{keyword}{auto} time\_micros = std::chrono::duration\_cast<std::chrono::microseconds>(}
+\DoxyCodeLine{77   std::chrono::system\_clock::now().time\_since\_epoch()).count(); \textcolor{comment}{// getting time in microseconds}}
+\DoxyCodeLine{78     }
+\DoxyCodeLine{79   srand(time\_micros); \textcolor{comment}{// using current time in microseconds as seed for random generator}}
+\DoxyCodeLine{80   \textcolor{keywordtype}{double} randNum = min + (rand() / (double)RAND\_MAX) * (max -\/ min);}
+\DoxyCodeLine{81   \textcolor{keywordflow}{return} randNum;}
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+
+
+Referenced by scan().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classSensor_a515f2323f860ba914807206685061ad5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSensor_ad7b9d45d7f65bf152e56a05998c5fc50}\label{classSensor_ad7b9d45d7f65bf152e56a05998c5fc50}} 
+\index{Sensor@{Sensor}!getCurrent@{getCurrent}}
+\index{getCurrent@{getCurrent}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getCurrent()}{getCurrent()}}
+{\footnotesize\ttfamily double $\ast$ Sensor\+::get\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 127 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{127                   \{}
+\DoxyCodeLine{128   \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}};}
+\DoxyCodeLine{129 \}}
+
+\end{DoxyCode}
+
+
+References current\+\_\+.
+
+\mbox{\Hypertarget{classSensor_aa5ecdd87ed7cf5774affc20c3d2037a9}\label{classSensor_aa5ecdd87ed7cf5774affc20c3d2037a9}} 
+\index{Sensor@{Sensor}!getId@{getId}}
+\index{getId@{getId}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Sensor\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90              \{}
+\DoxyCodeLine{91   \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classSensor_a850d32639622b7fa1f2bb8b15a96609b}{id\_}};}
+\DoxyCodeLine{92 \}}
+
+\end{DoxyCode}
+
+
+References id\+\_\+.
+
+\mbox{\Hypertarget{classSensor_ae46d0f89914270eeff47bb10df7ef834}\label{classSensor_ae46d0f89914270eeff47bb10df7ef834}} 
+\index{Sensor@{Sensor}!getLastDay@{getLastDay}}
+\index{getLastDay@{getLastDay}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getLastDay()}{getLastDay()}}
+{\footnotesize\ttfamily double $\ast$ Sensor\+::get\+Last\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{132                   \{}
+\DoxyCodeLine{133   \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}{lastDay\_}};}
+\DoxyCodeLine{134 \}}
+
+\end{DoxyCode}
+
+
+References last\+Day\+\_\+.
+
+\mbox{\Hypertarget{classSensor_ad94b29cffdecc3d435d69de66574f308}\label{classSensor_ad94b29cffdecc3d435d69de66574f308}} 
+\index{Sensor@{Sensor}!getLastWeek@{getLastWeek}}
+\index{getLastWeek@{getLastWeek}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getLastWeek()}{getLastWeek()}}
+{\footnotesize\ttfamily double $\ast$ Sensor\+::get\+Last\+Week (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 137 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{137                    \{}
+\DoxyCodeLine{138   \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}{lastWeek\_}};}
+\DoxyCodeLine{139 \}}
+
+\end{DoxyCode}
+
+
+References last\+Week\+\_\+.
+
+\mbox{\Hypertarget{classSensor_a5b1418b7a5eb82717cb93c0963b4f384}\label{classSensor_a5b1418b7a5eb82717cb93c0963b4f384}} 
+\index{Sensor@{Sensor}!getNsensors@{getNsensors}}
+\index{getNsensors@{getNsensors}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getNsensors()}{getNsensors()}}
+{\footnotesize\ttfamily int Sensor\+::get\+Nsensors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                         \{}
+\DoxyCodeLine{15   \textcolor{keywordflow}{return} \mbox{\hyperlink{classSensor_a426c71e0196c5925ef46ac9df754720f}{nsensors\_}};}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+
+
+References nsensors\+\_\+.
+
+\mbox{\Hypertarget{classSensor_a22459a42730fd96a3148eae3ece4d028}\label{classSensor_a22459a42730fd96a3148eae3ece4d028}} 
+\index{Sensor@{Sensor}!getType@{getType}}
+\index{getType@{getType}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Sensor\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 85 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                \{}
+\DoxyCodeLine{86   \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}};}
+\DoxyCodeLine{87 \}}
+
+\end{DoxyCode}
+
+
+References type\+\_\+.
+
+\mbox{\Hypertarget{classSensor_ac004ce3a3fe0aff7c053195ea295c5c8}\label{classSensor_ac004ce3a3fe0aff7c053195ea295c5c8}} 
+\index{Sensor@{Sensor}!scan@{scan}}
+\index{scan@{scan}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily void Sensor\+::scan (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})}
+
+
+
+Scans the sensor and updates its current value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimum value for the sensor. \\
+\hline
+{\em max} & Maximum value for the sensor. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                   \{}
+\DoxyCodeLine{62   \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64   std::cout << \textcolor{stringliteral}{"{}Scanning..."{}} << std::endl;}
+\DoxyCodeLine{65   this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[0] = 10.0;}
+\DoxyCodeLine{66   \textcolor{keywordflow}{for}(i = 0; i < \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}{SAMPLES\_DAY}}; i++)\{}
+\DoxyCodeLine{67     this-\/>\mbox{\hyperlink{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}{lastDay\_}}[i] = \mbox{\hyperlink{classSensor_a515f2323f860ba914807206685061ad5}{Sensor::genRand}}(min, max);}
+\DoxyCodeLine{68   \}}
+\DoxyCodeLine{69   \textcolor{keywordflow}{for}(i = 0; i < \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}{SAMPLES\_WEEK}}; i++)\{}
+\DoxyCodeLine{70     this-\/>\mbox{\hyperlink{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}{lastWeek\_}}[i] = \mbox{\hyperlink{classSensor_a515f2323f860ba914807206685061ad5}{Sensor::genRand}}(min, max);}
+\DoxyCodeLine{71   \}}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+
+
+References current\+\_\+, gen\+Rand(), last\+Day\+\_\+, last\+Week\+\_\+, SAMPLES\+\_\+\+DAY, and SAMPLES\+\_\+\+WEEK.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classSensor_ac004ce3a3fe0aff7c053195ea295c5c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSensor_ad8a4c3aef60d90ade4b20bab1dcc3723}\label{classSensor_ad8a4c3aef60d90ade4b20bab1dcc3723}} 
+\index{Sensor@{Sensor}!setCurrent@{setCurrent}}
+\index{setCurrent@{setCurrent}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{setCurrent()}{setCurrent()}}
+{\footnotesize\ttfamily void Sensor\+::set\+Current (\begin{DoxyParamCaption}\item[{double $\ast$}]{current }\end{DoxyParamCaption})}
+
+
+
+Definition at line 106 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{106                                  \{}
+\DoxyCodeLine{107   this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[0] = current[0];}
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+
+
+References current\+\_\+.
+
+\mbox{\Hypertarget{classSensor_aa3b5796e7400b06b9e44c4cefe5c5517}\label{classSensor_aa3b5796e7400b06b9e44c4cefe5c5517}} 
+\index{Sensor@{Sensor}!setId@{setId}}
+\index{setId@{setId}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Sensor\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                    \{}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102   this-\/>\mbox{\hyperlink{classSensor_a850d32639622b7fa1f2bb8b15a96609b}{id\_}} = id;}
+\DoxyCodeLine{103 \}}
+
+\end{DoxyCode}
+
+
+References id\+\_\+.
+
+\mbox{\Hypertarget{classSensor_a12c9cac5e7749c2edf9f9feeb093b962}\label{classSensor_a12c9cac5e7749c2edf9f9feeb093b962}} 
+\index{Sensor@{Sensor}!setLastDay@{setLastDay}}
+\index{setLastDay@{setLastDay}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{setLastDay()}{setLastDay()}}
+{\footnotesize\ttfamily void Sensor\+::set\+Last\+Day (\begin{DoxyParamCaption}\item[{double $\ast$}]{last\+Day }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                                  \{}
+\DoxyCodeLine{112   std::cout << \textcolor{stringliteral}{"{}Setting last day..."{}} << std::endl;}
+\DoxyCodeLine{113   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}{SAMPLES\_DAY}}; i++)\{}
+\DoxyCodeLine{114     this-\/>\mbox{\hyperlink{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}{lastDay\_}}[i] = lastDay[i];}
+\DoxyCodeLine{115   \}}
+\DoxyCodeLine{116 \}}
+
+\end{DoxyCode}
+
+
+References last\+Day\+\_\+, and SAMPLES\+\_\+\+DAY.
+
+\mbox{\Hypertarget{classSensor_af74b78f97b805089eb266c573af0afb7}\label{classSensor_af74b78f97b805089eb266c573af0afb7}} 
+\index{Sensor@{Sensor}!setLastWeek@{setLastWeek}}
+\index{setLastWeek@{setLastWeek}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{setLastWeek()}{setLastWeek()}}
+{\footnotesize\ttfamily void Sensor\+::set\+Last\+Week (\begin{DoxyParamCaption}\item[{double $\ast$}]{last\+Week }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119                                    \{}
+\DoxyCodeLine{120   std::cout << \textcolor{stringliteral}{"{}Setting last week..."{}} << std::endl;}
+\DoxyCodeLine{121   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}{SAMPLES\_WEEK}}; i++)\{}
+\DoxyCodeLine{122     this-\/>\mbox{\hyperlink{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}{lastWeek\_}}[i] = lastWeek[i];}
+\DoxyCodeLine{123   \}}
+\DoxyCodeLine{124 \}}
+
+\end{DoxyCode}
+
+
+References last\+Week\+\_\+, and SAMPLES\+\_\+\+WEEK.
+
+\mbox{\Hypertarget{classSensor_acb8e7bb4a27edaf568e367a3861a75b5}\label{classSensor_acb8e7bb4a27edaf568e367a3861a75b5}} 
+\index{Sensor@{Sensor}!setType@{setType}}
+\index{setType@{setType}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Sensor\+::set\+Type (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95                        \{}
+\DoxyCodeLine{96   this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} = type;}
+\DoxyCodeLine{97 \}}
+
+\end{DoxyCode}
+
+
+References type\+\_\+.
+
+\mbox{\Hypertarget{classSensor_a172026601607cac9b7c34e22915f1efc}\label{classSensor_a172026601607cac9b7c34e22915f1efc}} 
+\index{Sensor@{Sensor}!showInfo@{showInfo}}
+\index{showInfo@{showInfo}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{showInfo()}{showInfo()}}
+{\footnotesize\ttfamily void Sensor\+::show\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays information about the sensor. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classCamera_a2445e50f20d4d78314624e268b344ea1}{Camera}}.
+
+
+
+Definition at line 26 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                 \{}
+\DoxyCodeLine{27   \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29   \textcolor{keywordflow}{switch}(this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}})\{}
+\DoxyCodeLine{30   \textcolor{keywordflow}{case}(\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35aec8bbda4c558fae85267a7aecfbdd163}{TYPE\_TEMP}}):}
+\DoxyCodeLine{31     std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>\mbox{\hyperlink{classSensor_a08d37f05e90dab854c6e3cb4af74a842}{type\_}} << \textcolor{stringliteral}{"{}. Temperature.\(\backslash\)n"{}};}
+\DoxyCodeLine{32     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{33   \textcolor{keywordflow}{case}(\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35ab6590f4c2341ffec9799f731b872925b}{TYPE\_HUM}}):}
+\DoxyCodeLine{34     std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>type\_ << \textcolor{stringliteral}{"{}. Humidity.\(\backslash\)n"{}};}
+\DoxyCodeLine{35     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{36   \textcolor{keywordflow}{case}(\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35acba7b4938fe4b71786674ec53684cc14}{TYPE\_MAG}}):}
+\DoxyCodeLine{37     std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>type\_ << \textcolor{stringliteral}{"{}. Magnetic.\(\backslash\)n"{}};}
+\DoxyCodeLine{38     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{39   \textcolor{keywordflow}{case}(\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35af6f5068c1bd60defd30cfc81793aa38e}{TYPE\_LIGHT}}):}
+\DoxyCodeLine{40     std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>type\_ << \textcolor{stringliteral}{"{}. Light.\(\backslash\)n"{}};}
+\DoxyCodeLine{41     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{42   \textcolor{keywordflow}{case}(\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a97dfee7edcb2ac01d4ec14f5a85fa36c}{TYPE\_AIR}}):}
+\DoxyCodeLine{43     std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>type\_ << \textcolor{stringliteral}{"{}. Air quality.\(\backslash\)n"{}};}
+\DoxyCodeLine{44     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{45   \textcolor{keywordflow}{case}(\mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a232035a5dddc41688ebfc2772e829442}{TYPE\_CAM}}):}
+\DoxyCodeLine{46     std::cout << \textcolor{stringliteral}{"{}Type: "{}} << this-\/>type\_ << \textcolor{stringliteral}{"{}. Camera.\(\backslash\)n"{}};}
+\DoxyCodeLine{47   \}}
+\DoxyCodeLine{48   std::cout << \textcolor{stringliteral}{"{}Id: "{}} << this-\/>\mbox{\hyperlink{classSensor_a850d32639622b7fa1f2bb8b15a96609b}{id\_}} << std::endl;}
+\DoxyCodeLine{49   std::cout << \textcolor{stringliteral}{"{}Current: "{}} << this-\/>\mbox{\hyperlink{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}{current\_}}[0] << std::endl;}
+\DoxyCodeLine{50   std::cout << \textcolor{stringliteral}{"{}Last day: ["{}};}
+\DoxyCodeLine{51   \textcolor{keywordflow}{for}(i = 0; i < \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}{SAMPLES\_DAY}}; i++)\{}
+\DoxyCodeLine{52     i != \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a7550dd7522482d621ac3e9ead314af70}{SAMPLES\_DAY}} -\/1? std::cout << this-\/>\mbox{\hyperlink{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}{lastDay\_}}[i] << \textcolor{stringliteral}{"{}, "{}}: std::cout << this-\/>\mbox{\hyperlink{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}{lastDay\_}}[i] << \textcolor{stringliteral}{"{}]\(\backslash\)n"{}};}
+\DoxyCodeLine{53   \}}
+\DoxyCodeLine{54   std::cout << \textcolor{stringliteral}{"{}Last week: ["{}};}
+\DoxyCodeLine{55   \textcolor{keywordflow}{for}(i = 0; i < \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}{SAMPLES\_WEEK}}; i++)\{}
+\DoxyCodeLine{56     i != \mbox{\hyperlink{Sensor_8h_a5779b896a6be292340abe9bd534f2e35a66af15cae3344fd77322ddf331271c23}{SAMPLES\_WEEK}} -\/1? std::cout << this-\/>\mbox{\hyperlink{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}{lastWeek\_}}[i] << \textcolor{stringliteral}{"{}, "{}}: std::cout << this-\/>\mbox{\hyperlink{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}{lastWeek\_}}[i] << \textcolor{stringliteral}{"{}]\(\backslash\)n"{}};}
+\DoxyCodeLine{57   \}}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+
+
+References current\+\_\+, id\+\_\+, last\+Day\+\_\+, last\+Week\+\_\+, SAMPLES\+\_\+\+DAY, SAMPLES\+\_\+\+WEEK, type\+\_\+, TYPE\+\_\+\+AIR, TYPE\+\_\+\+CAM, TYPE\+\_\+\+HUM, TYPE\+\_\+\+LIGHT, TYPE\+\_\+\+MAG, and TYPE\+\_\+\+TEMP.
+
+
+
+Referenced by Sensor\+DB\+::show\+One().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classSensor_a172026601607cac9b7c34e22915f1efc_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}\label{classSensor_acd8e145f5844f4f0a6ff02235add7c3d}} 
+\index{Sensor@{Sensor}!current\_@{current\_}}
+\index{current\_@{current\_}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{current\_}{current\_}}
+{\footnotesize\ttfamily double$\ast$ Sensor\+::current\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Array containing current sensor values. 
+
+Definition at line 43 of file Sensor.\+h.
+
+
+
+Referenced by Camera\+::\+Camera(), get\+Current(), Magnetic\+::\+Magnetic(), scan(), Sensor(), set\+Current(), show\+Info(), Camera\+::show\+Info(), and $\sim$\+Sensor().
+
+\mbox{\Hypertarget{classSensor_a850d32639622b7fa1f2bb8b15a96609b}\label{classSensor_a850d32639622b7fa1f2bb8b15a96609b}} 
+\index{Sensor@{Sensor}!id\_@{id\_}}
+\index{id\_@{id\_}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{id\_}{id\_}}
+{\footnotesize\ttfamily int Sensor\+::id\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unique identifier of the sensor. 
+
+Definition at line 41 of file Sensor.\+h.
+
+
+
+Referenced by Camera\+::\+Camera(), get\+Id(), Sensor(), set\+Id(), show\+Info(), and Camera\+::show\+Info().
+
+\mbox{\Hypertarget{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}\label{classSensor_a0f98c1a280e8b99174b7f428bb3dcfa2}} 
+\index{Sensor@{Sensor}!lastDay\_@{lastDay\_}}
+\index{lastDay\_@{lastDay\_}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{lastDay\_}{lastDay\_}}
+{\footnotesize\ttfamily double$\ast$ Sensor\+::last\+Day\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Array containing last day\textquotesingle{}s sensor values. 
+
+Definition at line 44 of file Sensor.\+h.
+
+
+
+Referenced by get\+Last\+Day(), scan(), Sensor(), set\+Last\+Day(), show\+Info(), and $\sim$\+Sensor().
+
+\mbox{\Hypertarget{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}\label{classSensor_a00afb1bb6767ba254b2addf3d06d0ce9}} 
+\index{Sensor@{Sensor}!lastWeek\_@{lastWeek\_}}
+\index{lastWeek\_@{lastWeek\_}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{lastWeek\_}{lastWeek\_}}
+{\footnotesize\ttfamily double$\ast$ Sensor\+::last\+Week\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Array containing last week\textquotesingle{}s sensor values. 
+
+Definition at line 45 of file Sensor.\+h.
+
+
+
+Referenced by get\+Last\+Week(), scan(), Sensor(), set\+Last\+Week(), show\+Info(), and $\sim$\+Sensor().
+
+\mbox{\Hypertarget{classSensor_a426c71e0196c5925ef46ac9df754720f}\label{classSensor_a426c71e0196c5925ef46ac9df754720f}} 
+\index{Sensor@{Sensor}!nsensors\_@{nsensors\_}}
+\index{nsensors\_@{nsensors\_}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{nsensors\_}{nsensors\_}}
+{\footnotesize\ttfamily int Sensor\+::nsensors\+\_\+ = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Number of sensors created. 
+
+Definition at line 42 of file Sensor.\+h.
+
+
+
+Referenced by get\+Nsensors(), and Sensor().
+
+\mbox{\Hypertarget{classSensor_a08d37f05e90dab854c6e3cb4af74a842}\label{classSensor_a08d37f05e90dab854c6e3cb4af74a842}} 
+\index{Sensor@{Sensor}!type\_@{type\_}}
+\index{type\_@{type\_}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{type\_}{type\_}}
+{\footnotesize\ttfamily int Sensor\+::type\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Type of the sensor. 
+
+Definition at line 40 of file Sensor.\+h.
+
+
+
+Referenced by Air\+Quality\+::\+Air\+Quality(), Camera\+::\+Camera(), get\+Type(), Humidity\+::\+Humidity(), Light\+Quality\+::\+Light\+Quality(), Magnetic\+::\+Magnetic(), Rgb\+::\+Rgb(), Sensor(), set\+Type(), show\+Info(), Camera\+::show\+Info(), Temp\+::\+Temp(), and Termic\+::\+Termic().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Sensor_8h}{Sensor.\+h}}\item 
+src/\mbox{\hyperlink{Sensor_8cpp}{Sensor.\+cpp}}\end{DoxyCompactItemize}

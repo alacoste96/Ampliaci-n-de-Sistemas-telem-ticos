@@ -1,0 +1,8 @@
+<map id="SensorDB::getSensors" name="SensorDB::getSensors">
+<area shape="rect" id="node1" title=" " alt="" coords="435,56,600,83"/>
+<area shape="rect" id="node2" href="$classAlarm.html#a54927a24ae6cdcd3e430acf59355d869" title="Reads magnetic sensors to detect intrusions." alt="" coords="207,5,364,32"/>
+<area shape="rect" id="node4" href="$classDashBoard.html#a1b72b3ab0212bca997e4755f9670441b" title="Displays information about all sensors." alt="" coords="184,56,387,83"/>
+<area shape="rect" id="node6" href="$classDashBoard.html#af822fdb9c274cd77dba3c95714e5821b" title="Displays information about sensors of a specific type." alt="" coords="194,107,377,133"/>
+<area shape="rect" id="node3" href="$classAlarm.html#a250bdda1b73aea36374bd9aca8acc2a2" title="Calls the police if an intrusion is detected." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="43,81,98,108"/>
+</map>

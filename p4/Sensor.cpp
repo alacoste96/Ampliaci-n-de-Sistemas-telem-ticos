@@ -1,0 +1,156 @@
+#include "Sensor.h"
+
+Sensor::Sensor(int type, int id) {
+    this->type_ = type;
+    this->id_ = id;
+    this->current_ = new double[1];
+    this->lastDay_ = new double[SAMPLES_DAY];
+    this->lastWeek_ = new double[SAMPLES_WEEK];
+}
+
+Sensor::~Sensor() {
+    delete[] this->current_;
+    delete[] this->lastDay_;
+    delete[] this->lastWeek_;
+}
+void
+Sensor::showInfo(){
+    int i;
+
+    switch(this->type_){
+    case(TYPE_TEMP):
+        std::cout << "Type: " << this->type_ << ". Temperature.\n";
+        break;
+    case(TYPE_HUM):
+        std::cout << "Type: " << this->type_ << ". Humidity.\n";
+        break;
+    case(TYPE_MAG):
+        std::cout << "Type: " << this->type_ << ". Magnetic.\n";
+        break;
+    case(TYPE_LIGHT):
+        std::cout << "Type: " << this->type_ << ". Light.\n";
+        break;
+    case(TYPE_AIR):
+        std::cout << "Type: " << this->type_ << ". Air quality.\n";
+        break;
+    case(TYPE_CAM):
+        std::cout << "Type: " << this->type_ << ". Camera.\n";
+    }
+    std::cout << "Id: " << this->id_ << std::endl;
+    std::cout << "Current: " << this->current_[0] << std::endl;
+    std::cout << "Last day: [";
+    for(i = 0; i < SAMPLES_DAY; i++){
+        std::cout << this->lastDay_[i] << ", ";
+    }
+    std::cout << "]" << std::endl;
+    std::cout << "Last week: [";
+    for(i = 0; i < SAMPLES_WEEK; i++){
+        std::cout << this->lastWeek_[i] << ", ";
+    }
+    std::cout << "]" << std::endl;
+}
+
+void
+Sensor::scan(double min, double max){
+    int i;
+
+    std::cout << "Scanning..." << std::endl;
+    this->current_[0] = 10.0;
+    for(i = 0; i < SAMPLES_DAY; i++){
+        this->lastDay_[i] = Sensor::genRandDouble(min, max);
+    }
+    for(i = 0; i < SAMPLES_WEEK; i++){
+        this->lastWeek_[i] = Sensor::genRandDouble(min, max);
+    }
+}
+
+double
+Sensor::meanCurrent(){
+    std::cout << "Mean current..." << std::endl;
+    return 0;
+    //return (this->current[0] + this->current[1]) / 2;
+}
+
+double
+Sensor::meanLastDay(){
+    std::cout << "Mean last day..." << std::endl;
+    return 0;
+    //return (this->lastDay[0] + this->lastDay[1]) / 2;
+}
+
+double
+Sensor::meanLastWeek(){
+    std::cout << "Mean last week..." << std::endl;
+    return 0;
+    //return (this->lastWeek[0] + this->lastWeek[1]) / 2;
+}
+
+double
+Sensor::genRandDouble(double min, double max){
+    std::random_device rd; // Generador de números aleatorios basado en hardware
+    std::mt19937 gen(rd()); // Semilla para el generador Mersenne Twister
+    std::uniform_real_distribution<double> dis(min, max); // Distribución uniforme en el rango [min, max]
+
+    return dis(gen); // Genera y devuelve un número aleatorio dentro del rango
+}
+int
+Sensor::getType(){
+    return this->type_;
+}
+
+int
+Sensor::getId(){
+    return this->id_;
+}
+
+void
+Sensor::setType(int type){
+    this->type_ = type;
+}
+
+void
+Sensor::setId(int id){
+
+    this->id_ = id;
+}
+
+void
+Sensor::setCurrent(double *current){
+    this->current_ = current;
+}
+
+void
+Sensor::setLastDay(double *lastDay){
+    std::cout << "Setting last day..." << std::endl;
+    /*for(int i = 0; i < SAMPLES_DAY; i++){
+        this->lastDay[i] = lastDay[i];
+    }*/
+}
+
+void
+Sensor::setLastWeek(double *lastWeek){
+    std::cout << "Setting last week..." << std::endl;
+    /*for(int i = 0; i < SAMPLES_WEEK; i++){
+        this->lastWeek[i] = lastWeek[i];
+    }*/
+}
+
+double *
+Sensor::getCurrent(){
+    return this->current_;
+}
+
+double *
+Sensor::getLastDay(){
+    return this->lastDay_;
+}
+
+double *
+Sensor::getLastWeek(){
+    return this->lastWeek_;
+}
+
+
+
+
+

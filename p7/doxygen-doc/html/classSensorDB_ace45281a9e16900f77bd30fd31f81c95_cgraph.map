@@ -1,0 +1,4 @@
+<map id="SensorDB::getAsensor" name="SensorDB::getAsensor">
+<area shape="rect" id="node1" title="Retrieves a sensor with the specified ID." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node2" href="$classSensorDB.html#a2f2b687ce1528185425613f79addf18e" title="Retrieves the number of sensors in the database." alt="" coords="220,5,396,32"/>
+</map>

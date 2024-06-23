@@ -1,0 +1,4 @@
+<map id="Magnetic" name="Magnetic">
+<area shape="rect" id="node1" title="Represents a magnetic Sensor." alt="" coords="25,351,132,428"/>
+<area shape="rect" id="node2" href="$classSensor.html" title="Represents a generic sensor." alt="" coords="5,5,152,303"/>
+</map>
